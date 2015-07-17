@@ -76,7 +76,36 @@
     </ul>
   </div>
 
-	<a class="btn-floating btn-large waves-effect waves-light teal add"><i class="material-icons">add</i></a>
+	<a href="#register" class="btn-floating btn-large waves-effect waves-light teal modal-trigger add"><i class="material-icons">add</i></a>
+	<div id="register" class="modal">
+    <div class="modal-content">
+      <h5>New Registrations</h5>
+            <form class="col s12" id="create-form" action="#"  name="create-form">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Full Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="last_name" type="tel" class="validate">
+                  <label for="last_name">Mobile</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="last_name" type="email" class="validate">
+                  <label for="last_name">Email</label>
+                </div>
+              </div>
+          </div>
+            <div class="modal-footer">
+                <button class="btn waves-effect waves-light sub-me blue-grey modal-btn" type="submit" name="action">Register<i class="material-icons">send</i>
+                </button>
+            </div>
+          </form>
+  </div>
 
   <div class="container">
     <div class="section">
@@ -149,7 +178,7 @@ To monitor and mentor them through the course of their education once they do.</
   </div>
 
   <footer class="page-footer blue-grey darken-1">
-    <div class="container">
+    <div class="container footer">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Explora Academy of Design</h5>
@@ -183,6 +212,8 @@ To monitor and mentor them through the course of their education once they do.</
       </div>
     </div>
   </footer>
+  
+  
 
 
   <!--  Scripts-->

@@ -39,6 +39,12 @@ p {
 	z-index: 11;
 }
 
+.modal-btn{
+	position: fixed;
+	bottom: 5%;
+	right: 10%;
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -59,9 +65,7 @@ footer.page-footer {
 nav{
   background-color: grey;
 }
-.container{
-  width: 80% !important;
-}
+
 .dropdown-content {
   min-width: 200px;
   overflow: hidden;
