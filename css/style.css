@@ -28,6 +28,10 @@ p {
 	z-index: 1;
 }
 
+.btn{
+	background-color:#707978;
+}
+
 .icon-block {
   padding: 0 15px;
 }
