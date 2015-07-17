@@ -22,22 +22,6 @@ p {
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
@@ -60,13 +44,25 @@ nav{
 .container{
   width: 80% !important;
 }
-.nav-wrapper ul li{
-  height: inherit;
-}
 
+.dropdown-content{
+  min-width: 200px;
+  overflow: hidden;
+}
 .headername{
     position: relative;
     bottom: 50px;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
 @media only screen and (min-width: 601px){
@@ -83,4 +79,10 @@ nav{
   .navbar-fixed {
     height: 80px; 
   } 
+}
+
+@media only screen and (max-width : 601px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
