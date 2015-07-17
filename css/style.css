@@ -67,6 +67,13 @@ nav{
 
 @media only screen and (min-width: 601px){
   nav{
-    height: 90px;
+    height: 80px;
   }  
 }
+
+@media only screen and (min-width : 601px) {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 80px;
+    line-height: 80px; }
+  .navbar-fixed {
+    height: 80px; } }
