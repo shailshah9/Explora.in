@@ -2,6 +2,8 @@ nav ul a,
 nav .brand-logo {
   color: #FFF;
   vertical-align: middle;
+  z-index: 3;
+  
 }
 
 p {
@@ -22,7 +24,9 @@ p {
     width: 100%;
   }
 
-
+.slider .slides li.active{
+	z-index: 1;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -38,6 +42,7 @@ footer.page-footer {
 .logo1{
   width: 100px;
   height: 90px;
+
 }
 
 nav{
