@@ -32,6 +32,13 @@ p {
 	background-color:#707978;
 }
 
+.add{
+	position: fixed;
+	bottom: 9%;
+	right: 6%;
+	z-index: 11;
+}
+
 .icon-block {
   padding: 0 15px;
 }
