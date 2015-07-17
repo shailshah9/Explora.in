@@ -60,20 +60,22 @@ nav{
 .container{
   width: 80% !important;
 }
-.nav-wrapper ul li{
-  height: inherit;
+.dropdown-content {
+  min-width: 200px;
+  overflow: hidden;
 }
 
-
-@media only screen and (min-width: 601px){
-  nav{
-    height: 80px;
-  }  
+.headername{
+    position: relative;
+    bottom: 50px;
 }
 
 @media only screen and (min-width : 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 80px;
-    line-height: 80px; }
+    line-height: 80px; 
+  }
   .navbar-fixed {
-    height: 80px; } }
+    height: 80px; 
+  } 
+}
