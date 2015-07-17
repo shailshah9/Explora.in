@@ -1,14 +1,7 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: #FFF;
+  vertical-align: middle;
 }
 
 p {
@@ -54,4 +47,26 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.logo1{
+  width: 100px;
+  height: 90px;
+}
+
+nav{
+  background-color: grey;
+}
+.container{
+  width: 80% !important;
+}
+.nav-wrapper ul li{
+  height: inherit;
+}
+
+
+@media only screen and (min-width: 601px){
+  nav{
+    height: 90px;
+  }  
 }
