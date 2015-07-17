@@ -11,17 +11,23 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">History</a></li>
+    <li><a href="#!">Key Profile</a></li>
+    <li><a href="#!">Course</a></li>
+    <li><a href="#!">Teaching Methodology</a></li>
+  </ul>
   <nav role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">
-      <img src="media/logo.png" class="responsive-img logo1">
-      <span class="headername">Explora Academy of  Design</span>
+        <img src="media/logo.png" class="responsive-img logo1">
+        <span class="headername">Explora Academy of  Design</span>
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">About Us</a></li>
-		<li><a href="#">Result</a></li>
-		<li><a href="#">Gallery</a></li>
-		<li><a href="#">Contact Us</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">About Us</a></li>
+		    <li><a href="#">Result</a></li>
+		    <li><a href="#">Gallery</a></li>
+		    <li><a href="#">Contact Us</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
