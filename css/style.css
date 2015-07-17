@@ -32,6 +32,19 @@ p {
 	background-color:#707978;
 }
 
+.caption,.caption h3, .caption h5{
+  text-shadow: 2px 2px black;
+  background: #fff;
+  color: grey;
+}
+
+.slider .slides li .caption {
+  width: 30%;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 60%;
+}
+
 .add{
 	position: fixed;
 	bottom: 9%;
