@@ -12,7 +12,7 @@
 <body>
 	<ul id='dropdown1' class='dropdown-content'>
 		<li><a href="#">History</a></li>
-		<li><a href="#">Key People</a></li>
+		<li><a href="key_people.html">Key People</a></li>
 		<li><a href="#our_course" class="modal-trigger">Course</a></li>
 		<li><a href="#">Teaching Methodology</a></li>
 	</ul>
@@ -72,13 +72,13 @@
 		</ul>
 	</div>
 
-	<a href="#register" class="btn-floating btn-large waves-effect waves-light teal modal-trigger add"><i class="material-icons large">note_add</i></a>
+	<a href="#register" class="btn-floating btn-large waves-effect waves-light teal modal-trigger add"><i class="material-icons large">person_add</i></a>
+
 	<div id="register" class="modal">
-    <div class="modal-header"><h5>New Registrations</h5></div>
-    <div class="modal-content">
-      
-            <form class="col s12" id="create-form" action="#"  name="create-form">
-              <div class="row">
+		<div class="modal-header"><h5>New Registrations</h5></div>
+    	<form id="create-form" action="#"  name="create-form">
+    	<div class="modal-content">
+		  	<div class="row">
                 <div class="input-field col s12">
 				  <i class="material-icons prefix">account_circle</i>
                   <input id="fname" type="text" class="validate">
@@ -87,12 +87,26 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-				  <i class="material-icons prefix">phone</i>
-                  <input id="mob" type="tel" class="validate">
-                  <label for="mob">Mobile</label>
+				  <i class="material-icons prefix">book</i>
+                  <input id="study" type="text" class="validate">
+                  <label for="study">Study</label>
                 </div>
               </div>
-			 
+              <div class="row">
+              	<div class="input-field col s12">
+				    <select>
+				      <option value="" disabled selected>Select Branch</option>
+				      <option value="baroda">Baroda</option>
+				    </select>
+				</div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+				  <i class="material-icons prefix">phone</i>
+                  <input id="mob" type="tel" class="validate">
+                  <label for="mob">Contact</label>
+                </div>
+              </div>
               <div class="row">
                 <div class="input-field col s12">
 				  <i class="material-icons prefix">email</i>
@@ -102,18 +116,17 @@
               </div>
 			  <div class="row">
                 <div class="input-field col s12">
-				  <i class="material-icons prefix">address</i>
+				  <i class="material-icons prefix">place</i>
                   <textarea id="address" class="materialize-textarea validate"></textarea>
                   <label for="address">Address</label>
                 </div>
               </div>
-          </div>
-            <div class="modal-footer">
-                <button class="btn waves-effect waves-light sub-me blue-grey modal-btn" type="submit" name="action">Register <i class="material-icons">send</i>
-                </button>
-            </div>
-          </form>
-  </div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn waves-effect waves-light submeet" type="submit" name="action">Register &nbsp;<i class="material-icons">send</i></button>
+		</div>
+		</form>
+	</div>
 
   
   
