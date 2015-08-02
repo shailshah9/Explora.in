@@ -12,4 +12,7 @@
   });
  $('.parallax').parallax();
  $('select').material_select();
+ $('.coursemodal').click(function () {
+ 	$('#our_course').closeModal();
+ })
 })(jQuery);
