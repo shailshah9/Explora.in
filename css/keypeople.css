@@ -9,11 +9,6 @@
 	padding: 15px 0px;
 }
 
-body{
-	background: url(../media/bg.png);
-	background-repeat: repeat;
-}
-
 .vertialign{
 	vertical-align: top;
 	line-height: 1.2em;
