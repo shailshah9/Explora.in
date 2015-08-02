@@ -3,8 +3,32 @@ nav .brand-logo {
   color: #FFF;
   vertical-align: middle;
   z-index: 3;
-  
-  
+}
+
+.container.nav-wrapper{
+  width: 80%
+}
+
+.modal-course.modal-content{
+  padding: 0px;
+  margin-top: -10px
+}
+
+.modal-header{
+  padding: 20px 20px 10px 30px;
+  background-color: #1741A3;
+  color: white;
+}
+
+.card-title{
+  background-color: #1741A3;
+  color: white;
+  padding: 20px 20px 10px 20px;
+}
+
+.card-content{
+  background-color: white;
+  color: #040404 !important;
 }
 
 p {
