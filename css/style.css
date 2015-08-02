@@ -4,6 +4,7 @@ nav .brand-logo {
   vertical-align: middle;
   z-index: 3;
   
+  
 }
 
 p {
@@ -33,7 +34,8 @@ p {
 }
 
 .caption,.caption h3, .caption h5{
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
+  font-size=: 10px;
   
 }
 
@@ -100,6 +102,12 @@ nav{
   #index-banner .section {
     top: 10%;
   }
+  .caption,.caption h3, .caption h5{
+  text-shadow: 1px 1px black;
+  font-size: 18px;
+  
+}
+
 }
 
 @media only screen and (min-width : 601px) {
@@ -109,7 +117,13 @@ nav{
   }
   .navbar-fixed {
     height: 80px; 
-  } 
+  }
+.caption,.caption h3, .caption h5{
+  text-shadow: 1px 1px black;
+  font-size: 18px;
+  
+}
+  
 }
 
 
@@ -118,4 +132,10 @@ nav{
   #index-banner .section {
     top: 0;
   }
+  .caption,.caption h3, .caption h5{
+  text-shadow: 1px 1px black;
+  font-size: 12px;
+  
+}
+
 }

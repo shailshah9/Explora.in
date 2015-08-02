@@ -7491,7 +7491,7 @@ select {
         background-size: cover;
         background-position: center; }
       .slider .slides li .caption {
-        color: #fff;
+        color: #000;
         position: absolute;
         top: 15%;
         left: 15%;
