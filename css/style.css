@@ -99,6 +99,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -139,10 +140,9 @@ nav{
     top: 10%;
   }
   .caption,.caption h3, .caption h5{
-  text-shadow: 1px 1px black;
-  font-size: 18px;
-  
-}
+    text-shadow: 1px 1px black;
+    font-size: 18px;
+  }
 
 }
 
@@ -154,11 +154,10 @@ nav{
   .navbar-fixed {
     height: 80px; 
   }
-.caption,.caption h3, .caption h5{
-  text-shadow: 1px 1px black;
-  font-size: 18px;
-  
-}
+  .caption,.caption h3, .caption h5{
+    text-shadow: 1px 1px black;
+    font-size: 18px;
+  }
   
 }
 
@@ -175,7 +174,14 @@ nav{
   .logo1{
     visibility: hidden;
   }
+  .headername{
+    bottom: 67px;
+    font-size:23px;
+    right: 25%
+  }
   .button-collapse{
     color: white;
+    right: 11%;
+    position: absolute;
   }
 }
