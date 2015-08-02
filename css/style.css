@@ -59,8 +59,10 @@ p {
 
 .caption,.caption h3, .caption h5{
   text-shadow: 1px 1px black;
-  font-size=: 10px;
-  
+  font-size: 10px;
+}
+.caption{
+  width: 300px;
 }
 
 .slider .slides li .caption {
