@@ -5,6 +5,11 @@ nav .brand-logo {
   z-index: 3;
 }
 
+body{
+  background: url(../media/bg.png);
+  background-repeat: repeat;
+}
+
 .container{
   width: 80%
 }
