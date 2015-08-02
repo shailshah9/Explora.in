@@ -169,9 +169,13 @@ nav{
     top: 0;
   }
   .caption,.caption h3, .caption h5{
-  text-shadow: 1px 1px black;
-  font-size: 12px;
-  
-}
-
+    text-shadow: 1px 1px black;
+    font-size: 12px;
+  }
+  .logo1{
+    visibility: hidden;
+  }
+  .button-collapse{
+    color: white;
+  }
 }
