@@ -12,6 +12,11 @@
 	padding: 15px 0px;
 }
 
+.notthisone{
+	text-align: left !important;
+	padding-left: 20px !important;
+}
+
 .vertialign{
 	vertical-align: top;
 	line-height: 1.2em;
