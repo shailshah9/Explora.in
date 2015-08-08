@@ -4,6 +4,9 @@ nav .brand-logo {
   vertical-align: middle;
   z-index: 3;
 }
+.hello ul li{
+  max-height: 300px
+}
 
 body{
   background: url(../media/bg.png);

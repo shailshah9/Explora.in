@@ -1,8 +1,8 @@
 (function($){
   $(function(){
     $('.button-collapse').sideNav();
-	$('.slider').slider({height:500});
-	$('#myslider').slider({height:300});
+	$('.hey').slider({height:500});
+	$('.hello').slider({height:200});
 	
 	$('.modal-trigger').leanModal({
 	      dismissible: true,
