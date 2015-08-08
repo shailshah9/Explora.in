@@ -23,13 +23,13 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 </head>
 <body>
 	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="#">History</a></li>
+		<li><a href="history.html">History</a></li>
 		<li><a href="key_people.html">Key People</a></li>
 		<li><a href="#our_course" class="modal-trigger">Course</a></li>
 		<li><a href="#">Teaching Methodology</a></li>
 	</ul>
 	<ul id='dropdown2' class='dropdown-content'>
-		<li><a href="#">History</a></li>
+		<li><a href="history.html">History</a></li>
 		<li><a href="key_people.html">Key People</a></li>
 		<li><a href="#our_course" class="modal-trigger">Course</a></li>
 		<li><a href="#">Teaching Methodology</a></li>
@@ -37,14 +37,14 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 
 	<nav role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo">
+			<a id="logo-container" href="index.html" class="brand-logo">
 				<img src="media/logo.png" class="responsive-img logo1"></img>
 				<span class="headername">Explora Academy of  Design</span>
 			</a>
 			
 			<ul class="right hide-on-med-and-down">
 				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">About Us<i class="material-icons suffix" style="float: right;">keyboard_arrow_down</i></a></li>
-			    <li><a href="#">Results</a></li>
+			    <li><a href="results.php">Results</a></li>
 			    <li><a href="#">Gallery</a></li>
 			    <li><a href="#">Contact Us</a></li>
 			    <li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;">phone</i><span style="float: left">9924376644</span></a></li>
@@ -52,7 +52,7 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 			<ul id="nav-mobile" class="side-nav">
 				
 				<li><a class="dropdown-button" href="#!" data-activates="dropdown2">About Us<i class="material-icons suffix" style="float: right;vertical-align:bottom; padding-top: 17px;">keyboard_arrow_right</i></a></li>
-				<li><a href="#">Results</a></li>
+				<li><a href="results.php">Results</a></li>
 				<li><a href="#">Gallery</a></li>
 				<li><a href="#">Contact Us</a></li>
 				<li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;margin-top:17px;">phone</i><span style="float: left;vertical-align:top">9924376644</span></a></li>
