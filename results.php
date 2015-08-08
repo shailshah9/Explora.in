@@ -39,6 +39,7 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 		<div class="nav-wrapper container">
 			<a id="logo-container" href="index.html" class="brand-logo">
 				<img src="media/logo.png" class="responsive-img logo1"></img>
+				<!---->
 				<span class="headername">Explora Academy of  Design</span>
 			</a>
 			
