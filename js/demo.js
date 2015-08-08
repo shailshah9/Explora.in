@@ -18,17 +18,12 @@
   }
 })();
 
-/**
- * Do the random stuff
- *
- */
-
 (function() {
 
   // cache vars
   var cards = document.querySelectorAll(".card.effect__random");
   var timeMin = 1;
-  var timeMax = 3;
+  var timeMax = 4;
   var timeouts = [];
 
   // loop through cards
@@ -47,7 +42,7 @@
     }
     timeouts[id] = setTimeout( function() {
       var c = card.classList;
-      var newTime = randomNum( timeMin, timeMax ) * 1000;
+      var newTime = randomNum( timeMin, timeMax ) * 2000;
       c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
       cardsTimeout( id, newTime, card );
     }, time );
