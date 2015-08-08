@@ -2,6 +2,8 @@
   $(function(){
     $('.button-collapse').sideNav();
 	$('.slider').slider({height:500});
+	$('#myslider').slider({height:300});
+	
 	$('.modal-trigger').leanModal({
 	      dismissible: true,
 	      opacity: .8,
