@@ -2,7 +2,7 @@
   $(function(){
     $('.button-collapse').sideNav();
 	$('.hey').slider({height:500});
-	$('.hello').slider({height:200});
+	$('.hello').slider({height:400, indicators:false});
 	
 	$('.modal-trigger').leanModal({
 	      dismissible: true,
