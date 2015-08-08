@@ -1,3 +1,15 @@
+<?php
+
+$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
+	
+$sql = "select * from result";
+$result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
+?>		
+					
+										
+						
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,11 +134,120 @@
 	        </div>
 	    </div>	
 	</div>
+	
 
 	<div class="modal-footer">
     	<button class="btn waves-effect waves-light submeet coursemodal blue-grey " >Okay &nbsp;<i class="material-icons">done_all</i></button>
     </div>
 </div>
+
+<!-- Results container over here -->
+
+<!-- main results-->
+<div class="container">
+	
+	<div class="row">
+        <div class="col s12 m12 l12">
+          <div class="card white">
+			<div class="card-content">
+			
+				<div class="row center">
+					<h2><u>Result</u></h2>
+					<p>Maintained 100% success in all its academic years since its inception in 2009. All past students from explora successfully secured admissions in the top schools of architecture in the state.</p>
+				</div>
+				
+			</div>
+			</div>
+			</div>
+			</div>
+            
+	<?php
+		//while($row=mysql_fetch_array($query))
+			for($i=0;$i<20;$i++)
+			{
+				echo "<div class=\"row\">";
+				for($j=0;$j<6;$j++)
+				{
+					echo "<div class=\"col s6 m3 l2\">
+								<div class=\"card\">
+									<div class=\"card-image\">
+										<img src=\"media/KeyPeople/3.jpg\">
+										<span class=\"card-title\"></span>
+									</div>
+									<div class=\"card-content center \">
+										<p><b>Name Surname</b></p>
+										<p><b>Score:</b>123</p>
+										<p><b>Batch:</b>2015</p>
+										<p><b>MSU</b></p>
+									</div>
+								</div>
+						</div>";
+				}
+				echo "</div>";
+			}	
+								
+					
+					
+	?>
+	
+
+</div>
+
+<!-- national exams over here-->
+
+<!-- main results-->
+<div class="container">
+	
+	<div class="row">
+        <div class="col s12 m12 l12">
+          <div class="card white">
+			<div class="card-content">
+			
+				<div class="row center">
+					<h5>Explora’s achievements are not only marked at state level but also at National level (Online Exams)</h5>
+					
+				</div>
+				
+			</div>
+			</div>
+			</div>
+			</div>
+            
+	<?php
+		//while($row=mysql_fetch_array($query))
+			for($i=0;$i<2;$i++)
+			{
+				echo "<div class=\"row\">";
+				for($j=0;$j<6;$j++)
+				{
+					echo "<div class=\"col s6 m3 l2\">
+								<div class=\"card\">
+									<div class=\"card-image\">
+										<img src=\"media/KeyPeople/3.jpg\">
+										<span class=\"card-title\"></span>
+									</div>
+									<div class=\"card-content center \">
+										<p><b>Name Surname</b></p>
+										<p><b>Score:</b>123</p>
+										<p><b>Rank:</b>1</p>
+										<p><b>Batch:</b>2015</p>
+										<p><b>MSU</b></p>
+									</div>
+								</div>
+						</div>";
+				}
+				echo "</div>";
+			}	
+								
+					
+					
+	?>
+	
+
+</div>
+
+
+<!-- Results container finished here -->
 <footer class="page-footer grey">
     <div class="container footer">
       <div class="row">
