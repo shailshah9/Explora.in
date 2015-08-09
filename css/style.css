@@ -139,7 +139,6 @@ body{
   height: 420px;
   top: 16%;
   left: 3%;
-  
   z-index: 25;
   position: absolute;
   background: transparent !important;
@@ -147,6 +146,14 @@ body{
   color: white;
 }
 
+.slider .smallslider li{
+  border: 6px solid grey;
+  border-radius: 12px;
+}
+
+.slider .slides{
+  background: transparent;
+}
 .card-titl{
   background-color: grey;
   color: white;
@@ -192,11 +199,6 @@ p {
 	height: 500px;
 	
 	
-}
-
-.slider .smallslider li.active{
-	border: 6px solid grey;
-	border-radius: 4px;
 }
 
 .btn{
