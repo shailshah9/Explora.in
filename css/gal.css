@@ -1,0 +1,11 @@
+.container .row .col div img{
+	height: 240px;
+	width: 300px
+}
+.container .row{
+	margin-top: 2%;
+	margin-bottom: 2%
+}
+.container .row:first-child{
+	margin-top: 5%;
+}

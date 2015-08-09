@@ -4,11 +4,7 @@ $connection = mysqli_connect("localhost","root","","explora") or die("Error " . 
 	
 $sql = "select * from result";
 $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
-?>		
-					
-										
-						
-
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,13 +22,13 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 		<li><a href="history.html">History</a></li>
 		<li><a href="key_people.html">Key People</a></li>
 		<li><a href="#our_course" class="modal-trigger">Course</a></li>
-		<li><a href="#">Teaching Methodology</a></li>
+		<li><a href="methodology.html">Teaching Methodology</a></li>
 	</ul>
 	<ul id='dropdown2' class='dropdown-content'>
 		<li><a href="history.html">History</a></li>
 		<li><a href="key_people.html">Key People</a></li>
 		<li><a href="#our_course" class="modal-trigger">Course</a></li>
-		<li><a href="#">Teaching Methodology</a></li>
+		<li><a href="methodology.html">Teaching Methodology</a></li>
 	</ul>
 
 	<nav role="navigation">
@@ -46,7 +42,7 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 			<ul class="right hide-on-med-and-down">
 				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">About Us<i class="material-icons suffix" style="float: right;">keyboard_arrow_down</i></a></li>
 			    <li><a href="results.php">Results</a></li>
-			    <li><a href="#">Gallery</a></li>
+			    <li><a href="gallery.html">Gallery</a></li>
 			    <li><a href="#">Contact Us</a></li>
 			    <li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;">phone</i><span style="float: left">9924376644</span></a></li>
 			</ul>
