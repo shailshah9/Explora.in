@@ -8,6 +8,9 @@ nav .brand-logo {
   
   max-height: 400px
 }
+.dropdown-content li > a, .dropdown-content li > span {
+  color: grey
+}
 
 body{
   background: url(../media/bg.png);

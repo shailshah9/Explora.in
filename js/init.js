@@ -2,7 +2,7 @@
   $(function(){
     $('.button-collapse').sideNav();
 	$('.hey').slider({height:500});
-	$('.hello').slider({height:400, indicators:false});
+	$('.hello').slider({height:400, indicators:false,interval:8000});
 	
 	$('.modal-trigger').leanModal({
 	      dismissible: true,
@@ -12,6 +12,9 @@
     	}
   	);
   });
+  $('span.headername').click(function () {
+  	window.location.href='index.html';
+  })
  $('.parallax').parallax();
  $('select').material_select();
  $('.coursemodal').click(function () {
