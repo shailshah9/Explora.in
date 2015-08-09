@@ -21,6 +21,25 @@ body{
   width: 80%
 }
 
+.fbicon{
+  background: url(../media/fb.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin: 20px 10px 10px 10px;
+  opacity: .7;
+}
+.yo{
+  margin: 20px 10px 10px 5px
+}
+.fbicon:hover{
+  background: url(../media/fb.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .bg1{
 	background : url(../media/ResultImages/images/1.jpg);
 	background-size: cover;
