@@ -135,9 +135,6 @@ body{
 	background-repeat: no-repeat;
 }
 
-
-
-
 .modal-course.modal-content{
   padding: 0px;
   margin-top: -10px
@@ -269,6 +266,7 @@ footer.page-footer {
   height: 90px;
 }
 
+
 nav{
   background-color: grey;
 }
@@ -317,9 +315,7 @@ nav{
   
 }
 
-
-
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 601px) {
   #index-banner .section {
     top: 0;
   }
@@ -340,4 +336,25 @@ nav{
     right: 11%;
     position: absolute;
   }
+  .left{
+    position: relative;
+  }
+  .add{
+    z-index: 1234
+  }
+  .wrapper{
+    width: 100%;
+    left: 0;
+    position: absolute;
+  }
+  .thisone{
+    margin-top: 75%
+  }
+  .card{
+    padding-bottom: 16%;
+    width: 33.33333333%;
+    position: relative;
+    float: left;
+  }
 }
+
