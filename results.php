@@ -15,6 +15,7 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/results.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="icon" href="media/logo.png">
 </head>
 <body>
@@ -174,7 +175,6 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 									<div class=\"card-content center \">
 										<p><b>Name Surname</b></p>
 										<p><b>Score:</b>123</p>
-										<p><b>Batch:</b>2015</p>
 										<p><b>MSU</b></p>
 									</div>
 								</div>
@@ -227,7 +227,6 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 										<p><b>Name Surname</b></p>
 										<p><b>Score:</b>123</p>
 										<p><b>Rank:</b>1</p>
-										<p><b>Batch:</b>2015</p>
 										<p><b>MSU</b></p>
 									</div>
 								</div>
