@@ -124,6 +124,10 @@ body{
   margin-top: -10px
 }
 
+.row .col {
+	padding: 0 0.5rem ;
+}
+
 .modal-header{
   padding: 20px 20px 10px 30px;
   background-color: grey;
@@ -135,11 +139,10 @@ body{
   height: 420px;
   top: 16%;
   left: 3%;
-  border-radius: 13px;
-  padding: 2px 2px 2px 2px;
+  
   z-index: 25;
   position: absolute;
-  background: grey;
+  background: transparent !important;
   opacity: 0.95;
   color: white;
 }
@@ -188,6 +191,12 @@ p {
 	z-index: 1;
 	height: 500px;
 	
+	
+}
+
+.slider .smallslider li.active{
+	border: 6px solid grey;
+	border-radius: 4px;
 }
 
 .btn{
