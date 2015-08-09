@@ -18,6 +18,104 @@ body{
   width: 80%
 }
 
+.bg1{
+	background : url(../media/ResultImages/images/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg2{
+	background : url(../media/ResultImages/images/2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg3{
+	background : url(../media/ResultImages/images/3_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.bg4{
+	background : url(../media/ResultImages/images/4_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg5{
+	background : url(../media/ResultImages/images/5_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg6{
+	background : url(../media/ResultImages/images/6_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg7{
+	background : url(../media/ResultImages/images/7_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg8{
+	background : url(../media/ResultImages/images/8_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg9{
+	background : url(../media/ResultImages/images/9_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg10{
+	background : url(../media/ResultImages/images/10._1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg11{
+	background : url(../media/ResultImages/images/15.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg12{
+	background : url(../media/ResultImages/images/10_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg13{
+	background : url(../media/ResultImages/images/11_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg14{
+	background : url(../media/ResultImages/images/12_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg15{
+	background : url(../media/ResultImages/images/13_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg16{
+	background : url(../media/ResultImages/images/14_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg17{
+	background : url(../media/ResultImages/images/16_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg18{
+	background : url(../media/ResultImages/images/17_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+
 .modal-course.modal-content{
   padding: 0px;
   margin-top: -10px
