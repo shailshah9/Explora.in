@@ -7,10 +7,6 @@
   font-size: 40px;
 }
 
-.section__content {
-  padding-left: 3px;
-}
-
 .card {
   position: relative;
   float: left;
@@ -19,8 +15,9 @@
   margin: 0px 0px;
   text-align: center;
 }
-
-
+.res{
+	margin-top:15px;
+}
 
 /* card fronts and backs */
 .card__front,
@@ -95,6 +92,7 @@
     position: relative;
     float: left;
   }
+  
   .card__text h3{
     font-size: 22px;
     line-height: 10px
