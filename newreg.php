@@ -25,7 +25,6 @@
 					  <input name="group1" type="radio" id="jee" />
 				      <label for="jee">JEE (B.Arch)</label>
 				</p>
-				
             </div>
 			<div class="row">
 		        <div class="input-field col s12 l4 m4">
