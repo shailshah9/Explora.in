@@ -113,13 +113,18 @@
     	<div class="modal-content">
 		  	<div class="row">
                 <p>
-					  <input name="group1" type="radio" id="enquiry" class="grey"/>
+					  <input name="group1" type="radio" id="enquiry" class="grey" value="Enquiry" />
 					  <label for="enquiry">Enquiry</label>
-				
+						&nbsp;
 					  <input name="group1" type="radio" id="newReg" />
 				      <label for="newReg">New Registration</label>
 				</p>
-				<p>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="enqq" style="display:none;" required class="materialize-textarea validate"></textarea>
+                  <label id="yob" style="display:none;" for="enqq">Your Question(s)</label>
+                </div>
             </div>
 			<div class="row">
                 <div class="input-field col s12">
@@ -549,5 +554,20 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  		$('input:radio[name="group1"]').change(function(){
+  			console.log("fuckwhats happening");
+	        if ($(this).is(':checked') && $(this).val() == 'Enquiry') {
+	            $('#enqq').show();
+	            $('#yob').show();
+	        }
+	        else {
+	        	$('#enqq').hide();
+	        	$('#yob').hide();
+	        }
+	    });
+ 	});
+  </script>
   </body>
 </html>
