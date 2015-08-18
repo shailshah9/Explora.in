@@ -20,5 +20,12 @@
  $('.coursemodal').click(function () {
  	$('#our_course').closeModal();
  	$('#contact').closeModal();
- })
+ });
+ $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 50 // Creates a dropdown of 15 years to control year
+  });
+  $(document).ready(function() {
+    $('input#input_text, textarea#textarea1').characterCounter();
+  });
 })(jQuery);
