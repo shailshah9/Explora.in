@@ -8,20 +8,17 @@
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/newreg.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="icon" href="media/logo.png">
-	<style type="text/css">
-	
-	</style>
 </head>
 <body>
-
+<div class="container">
 	<div class="row main-thing">
-		<h3 class="center">New Registrations</h3>
+		<h2 class="center">New Registrations</h2>
 	    <form name="login_form" id="reg_form" method="POST" class="col s12 white-text" action="register.php">
 	      	<div class="row">
                 <p class="center">
 					  <input name="group1" type="radio" id="nata"/>
 					  <label for="nata">Nata</label>
-				
+
 					  <input name="group1" type="radio" id="ID" />
 				      <label for="ID">Interior Design</label>
 					  
@@ -47,39 +44,44 @@
 		        </div>
 		    </div>
 		    <div class="row">
-		        
-		          <div class="input-field col s12 l8 m8">
-					<textarea id="address" class="materialize-textarea" length="120"></textarea>
-					<label for="address">Address</label>
-          
-		        </div>
-				
+		        	<div class="input-field col s12 l12 m12">
+						<textarea id="address" class="materialize-textarea" length="120"></textarea>
+						<label for="address">Address</label>
+		        	</div>
 	      	</div>
 			<div class="row">
-				<div class="input-field col s12 l4 m4">
+				<div class="input-field col s12 l12 m12">
 		          <input id="dob" type="date" class="validate datepicker" autocomplete="off" name="dob" required>
 		          <label for="dob">Date of Birth</label>
 		        </div>
-				<div class="input-field col s12 l4 m4">
+		    </div>
+		    <div class="row">
+				<div class="input-field col s12 l6 m6">
 		          <input id="mob" type="text" class="validate" autocomplete="off" length="13" name="mob" required>
-		          <label for="mob">Mobile no.</label>
+		          <label for="mob">Contact</label>
 		        </div>
-				
-				<div class="file-field input-field col s12 l8 m8">
-				  <input id="photo" class="file-path validate" type="text"/>
-				  <label for="photo">Upload your photo</label>
-				  <div class="btn">
-					<span>Upload</span>
-					<input type="file" />
-				  </div>
-				</div>
-							
+		        <div class="input-field col s12 l6 m6">
+		          <input id="mail" type="email" class="validate" autocomplete="off" name="mail" required>
+		          <label for="mail">Email</label>
+		        </div>
 			</div>
-	      	<button class="btn waves-effect waves-light right" type="submit" name="action">Submit
-				<i class="material-icons">send</i>
+			<div class="row">
+				<div class="file-field input-field col s12 l12 m12">
+					<div class="btn">
+				    	<span>Upload Photo</span>
+				       	<input type="file" name="file" id="photo" accept="image/*" required="">
+				    </div>
+					<div class="file-path-wrapper">
+		              <input class="file-path validate" type="text">
+		            </div>
+			    </div>
+			</div>
+	      	<button class="btn waves-effect waves-light btn-large right" type="submit" name="action">Submit&nbsp;
+				<i class="material-icons">save</i>
 			</button>
 	    </form>
 	</div>
+</div>
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/materialize.js"></script>
