@@ -1,0 +1,35 @@
+	.submeet{
+		vertical-align: top !important;
+	}
+	.container{
+		width: 80% !important;
+		padding: 0px 0px 30px 0px;
+
+	}
+	.container h4{
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.pagination-div{
+		padding: 5px 0px 45px 0px;
+		border-bottom:1px solid black;
+	}
+	#img_form{
+		padding-left: 50px !important;
+	}
+	.file-path-wrapper{
+		overflow: hidden;
+		padding-left: 10px;
+	}
+	.file-path{
+		width: 80% !important
+	}
+	@media screen and (max-width: 600px){
+		#img_form{
+			padding-left: 30px !important;
+		}	
+		.container{
+			width: 100% !important;
+			margin-left: 5px;
+		}
+	}

@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/newreg.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	
 	<link rel="icon" href="media/logo.png">
 </head>
 <body>
@@ -16,14 +17,11 @@
 	    <form name="login_form" id="reg_form" method="POST" enctype="multipart/form-data" class="col s12 white-text" action="register.php">
 	      	<div class="row">
                 <p class="center">
-					  <input name="group1" type="radio" id="nata"/>
+					  <input name="group2" type="radio" id="nata" value="nata" checked/>
 					  <label for="nata">Nata</label>
-
-					  <input name="group1" type="radio" id="ID" />
+						&nbsp;
+					  <input name="group2" type="radio" id="ID" value="ID"/>
 				      <label for="ID">Interior Design</label>
-					  
-					  <input name="group1" type="radio" id="jee" />
-				      <label for="jee">JEE (B.Arch)</label>
 				</p>
             </div>
 			<div class="row">
@@ -44,7 +42,7 @@
 		    </div>
 		    <div class="row">
 		        	<div class="input-field col s12 l12 m12">
-						<textarea id="address" class="materialize-textarea" length="120"></textarea>
+						<textarea id="address" class="materialize-textarea" length="120" name="address"></textarea>
 						<label for="address">Address</label>
 		        	</div>
 	      	</div>
@@ -60,7 +58,7 @@
 		          <label for="mob">Contact</label>
 		        </div>
 		        <div class="input-field col s12 l6 m6">
-		          <input id="mail" type="email" class="validate" autocomplete="off" name="mail" required>
+		          <input id="mail" type="email" class="validate" autocomplete="off" name="email" required>
 		          <label for="mail">Email</label>
 		        </div>
 			</div>

@@ -30,6 +30,11 @@
 		vertical-align: middle;
 	}
 	
+	.shail{
+	
+		padding-top: 200px;
+	}
+	
 	@media only screen and (max-width : 600px) {
 		.main-thing{
 			width: 90%;
@@ -38,5 +43,8 @@
 		}
 		.image-logo{
 			width:95%
+		}
+		.shail{
+			padding-top:10px;
 		}
 	}

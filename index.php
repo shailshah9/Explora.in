@@ -112,17 +112,17 @@
     	<form id="create-form" action="check.php" method="POST" name="create-form">
     	<div class="modal-content">
 		  	<div class="row">
-                <p>
-					  <input name="group1" type="radio" id="enquiry" class="grey" value="enquiry" />
-					  <label for="enquiry">Enquiry</label>
-						&nbsp;
-					  <input name="group1" type="radio" id="newReg" />
+                <p>		
+					  <input name="group1" type="radio" id="newReg" value="newreg"/>
 				      <label for="newReg">New Registration</label>
+						&nbsp;
+					  <input name="group1" type="radio" id="enquiry" value="enquiry" />
+					  <label for="enquiry">Enquiry</label>
 				</p>
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="enqq" style="display:none;" required class="materialize-textarea validate" name="enqq"></textarea>
+                  <textarea id="enqq" style="display:none;" class="materialize-textarea validate" name="enqq" value=""></textarea>
                   <label id="yob" style="display:none;" for="enqq">Your Question(s)</label>
                 </div>
             </div>
@@ -557,7 +557,6 @@
   <script type="text/javascript">
   	$(document).ready(function() {
   		$('input:radio[name="group1"]').change(function(){
-  			console.log("fuckwhats happening");
 	        if ($(this).is(':checked') && $(this).val() == 'enquiry') {
 	            $('#enqq').show();
 	            $('#yob').show();

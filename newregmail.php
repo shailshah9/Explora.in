@@ -38,7 +38,7 @@ $mail->SMTPOptions = array(
         'allow_self_signed' => true
     )
 );
-
+$newUrl="http://localhost:8181/Explora.in/newreg.php";
 $mail->From = 'dbp3435@gmail.com';
 $mail->FromName = $name;
 $mail->addAddress($email, $name);     // Add a recipient
@@ -52,7 +52,10 @@ $mail->addReplyTo('rajani.tanmay@gmail.com', 'Information');
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Explora enquiry from '.$name;
-$mail->Body    = $enqq;
+$mail->Body    = 'Thank you for showing your interest in our academy.
+					To confirm your registration, please click link below and fill out the form.
+					Once you fill up the form, our representative will contact you with further instructions regarding confirmation.'."\r\n"
+					.$newUrl;
 //$mail->AddAttachment('dhaval.pdf','helo.pdf');
 if(!$mail->send()) {
     echo 'Message could not be sent.';
