@@ -109,11 +109,11 @@
 
 	<div id="register" class="modal">
 		<div class="modal-header"><h5>New Registrations</h5></div>
-    	<form id="create-form" action="#"  name="create-form">
+    	<form id="create-form" action="check.php" method="POST" name="create-form">
     	<div class="modal-content">
 		  	<div class="row">
                 <p>
-					  <input name="group1" type="radio" id="enquiry" class="grey" value="Enquiry" />
+					  <input name="group1" type="radio" id="enquiry" class="grey" value="enquiry" />
 					  <label for="enquiry">Enquiry</label>
 						&nbsp;
 					  <input name="group1" type="radio" id="newReg" />
@@ -122,43 +122,43 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="enqq" style="display:none;" required class="materialize-textarea validate"></textarea>
+                  <textarea id="enqq" style="display:none;" required class="materialize-textarea validate" name="enqq"></textarea>
                   <label id="yob" style="display:none;" for="enqq">Your Question(s)</label>
                 </div>
             </div>
 			<div class="row">
                 <div class="input-field col s12">
-                  <input id="fname" type="text" required class="validate">
+                  <input id="fname" type="text" required class="validate" name="fname">
                   <label for="fname">Full Name</label>
                 </div>
             </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="study" type="text" required class="validate">
+                  <input id="study" type="text" required class="validate" name="study">
                   <label for="study">Study</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="mob" required type="tel" class="validate">
+                  <input id="mob" required type="tel" class="validate" name="mob">
                   <label for="mob">Contact</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="email" type="email" required class="validate">
+                  <input id="email" type="email" required class="validate" name="email">
                   <label for="email">Email</label>
                 </div>
               </div>
 			  <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="address" required class="materialize-textarea validate"></textarea>
+                  <textarea id="address" required class="materialize-textarea validate" name="address"></textarea>
                   <label for="address">Address</label>
                 </div>
               </div>
 		</div>
 		<div class="modal-footer">
-			<button class="btn waves-effect waves-light submeet" type="submit" name="submit">Register &nbsp;<i class="material-icons">send</i></button>
+			<button class="btn waves-effect waves-light submeet" type="submit" name="action">Register &nbsp;<i class="material-icons">send</i></button>
 		</div>
 		</form>
 	</div>
@@ -558,7 +558,7 @@
   	$(document).ready(function() {
   		$('input:radio[name="group1"]').change(function(){
   			console.log("fuckwhats happening");
-	        if ($(this).is(':checked') && $(this).val() == 'Enquiry') {
+	        if ($(this).is(':checked') && $(this).val() == 'enquiry') {
 	            $('#enqq').show();
 	            $('#yob').show();
 	        }
