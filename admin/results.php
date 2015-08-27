@@ -10,9 +10,18 @@
 	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="icon" href="../media/logo.png">
 	<style type="text/css">
-	body{
+	input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #fff;
+   }
 
-	}
+  label{
+    color:#fff !important;
+  }
+  .input-field .prefix.active {
+      color: #fff; }
+
+  input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    border-bottom-color:#fff !important  }   
 	.main-thing{
 		width: 900px;
 		height: 520px;
@@ -98,7 +107,7 @@
 	      	</div>
 	      	<div class="row">
 				<div class="file-field input-field col s12 l12 m12">
-					<div class="btn">
+					<div class="btn white teal-text">
 				    	<span>Upload Photo</span>
 				       	<input type="file" name="file" id="photo" accept="image/*" required="">
 				    </div>
@@ -107,7 +116,7 @@
 		            </div>
 			    </div>
 			</div>
-	      	<button class="btn waves-effect waves-light submeet right" type="submit" name="action">Submit
+	      	<button class="btn waves-effect waves-light submeet right white teal-text" type="submit" name="action">Submit
 				<i class="material-icons">send</i>
 			</button>
 	    </form>
