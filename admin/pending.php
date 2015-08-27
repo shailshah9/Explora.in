@@ -1,18 +1,29 @@
 <?php
-
-
+session_start();
+if(!isset($_SESSION['unm'])) header('location:index.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-	<title>Results::Explora Academy of Design</title>
+	<title>Explora Academy of Design</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link rel="icon" href="media/logo.png">
+	<link rel="stylesheet" href="css/common.css">
+	<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<style type="text/css">
+	.thiscard{
+		padding: 30px;
+		background-color: inherit;
+		text-align: center;
+	}
+	.thiscard a{
+		margin: 15px;
+	}
+	</style>
+	<script src="../js/modernizr.js"></script>
+	<link rel="icon" href="../media/logo.png">
 </head>
 <body>
 	<ul id='dropdown1' class='dropdown-content'>
@@ -30,9 +41,8 @@
 
 	<nav role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="index.html" class="brand-logo">
-				<img src="media/logo.png" class="responsive-img logo1"></img>
-				<!---->
+			<a id="logo-container" href="index.php" class="brand-logo">
+				<img src="../media/logo.png" class="responsive-img logo1"></img>
 				<span class="headername">Explora Academy of  Design</span>
 			</a>
 			
@@ -40,43 +50,79 @@
 				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">About Us<i class="material-icons suffix" style="float: right;">keyboard_arrow_down</i></a></li>
 			    <li><a href="results.php">Results</a></li>
 			    <li><a href="gallery.html">Gallery</a></li>
-			    <li><a href="#">Contact Us</a></li>
+			    <li><a href="#contact" class="modal-trigger">Contact Us</a></li>
 			    <li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;">phone</i><span style="float: left">9924376644</span></a></li>
 			</ul>
 			<ul id="nav-mobile" class="side-nav">
-				
 				<li><a class="dropdown-button" href="#!" data-activates="dropdown2">About Us<i class="material-icons suffix" style="float: right;vertical-align:bottom; padding-top: 17px;">keyboard_arrow_right</i></a></li>
 				<li><a href="results.php">Results</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="#contact" class="modal-trigger">Contact Us</a></li>
+				<li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;margin-top:17px;">phone</i><span style="float: left;vertical-align:top">9924376644</span></a></li>
 				<li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;margin-top:17px;">phone</i><span style="float: left;vertical-align:top">9924376644</span></a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>
 	</nav>
-  
-	<div class="slider">
-		<ul class="slides">
-			<li>
-				<img src="media/ResultImages/Banner/1.jpg">
-			</li>
-			<li>
-				<img src="media/ResultImages/Banner/2.jpg">
-			</li>
-			<li>
-				<img src="media/ResultImages/Banner/3.jpg">
-			</li>
-			<li>
-				<img src="media/ResultImages/Banner/4.jpg">
-			</li>
-		</ul>
+
+	<div id="contact" class="modal">
+		<div class="modal-header"><h5>Contact Us</h5></div>
+    	<div class="modal-content">
+            <div class="row">
+		        <div class="col s12 m6">
+		          <div class="card card3 grey ">
+		            <div class="card-content white-text">
+		              <span class="card-title">Address</span><br><br>
+		              Studio 2, First Floor <br>Cross Road Complex <br>Next to Mr.Puff, <br>Near to Domino's Pizza, <br>Subhanpura, Vadodara - 390023
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col s12 m6">
+		          <div class="card card3 grey ">
+		            <div class="card-content white-text">
+		              <span class="card-title">Contact</span>
+		              <div><span>Ar. Manoj Patel: </span><a href="tel:9924376644"><u class="white-text"><span>+91 9924376644</span></u></a></div>
+		              <div><span>Ar. Parth Chitte: </span><a href="tel:9998130018"><u class="white-text"><span>+91 9998130018</span></u></a></div>
+		            </div>
+		          </div>
+		          <div>
+	                <div>
+	                	<a href="http://www.facebook.com/exploraacademy"><span class="fbicon large btn-floating btn-large waves-effect waves-light"></span></a>
+	                	<a href="mailto:hello@explora.in" class="btn-floating btn-large waves-effect waves-light grey yo"><i class="material-icons large">email</i></a></div>
+	              </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn coursemodal waves-effect waves-light submeet" type="submit" name="submit">Okay &nbsp;<i class="material-icons">done_all</i></button>
+		</div>
 	</div>
 
-	
-	
+	<div class="container">
+		<section>
+			<h3 class="center">ADMIN PANEL</h3>
+			<p>
+				<div class="row">
+			        <div class="col s12 m12 l12">
+			          <div class="card blue-grey darken-1">
+			            <div class="card-content white-text">
+			              <span class="card-title">Applications' Approval Status</span>
+			              <p class="thiscard">
+			              	<a href="pending.php" class="waves-effect waves-light red lighten-2 btn-large"><i class="material-icons right">announcement</i>Pending</a>
+			              	<a class="waves-effect waves-light green lighten-2 btn-large"><i class="material-icons right">done_all</i>Approved</a>
+			              	<a href="logout.php" class="waves-effect waves-light  brown lighten-2 btn-large"><i class="material-icons right">keyboard_tab</i>Logout</a>
+			              </p>
+			            </div>
+			          </div>
+			        </div>
+			    </div>
+			</p>
+		</section>
+	</div>
+
 	<div id="our_course" class="modal">
 	    <div class="modal-content modal-course">
-			<div class="card blue-grey darken-1">
+			<div class="card card3 blue-grey darken-1">
 	        <div class="card-titl"><h4>Our Course</h4></div>
 	        <div class="card-content thiscard white-text">
 	            <h5><strong>NATA </strong></h5>
@@ -128,104 +174,27 @@
 	        </div>
 	    </div>	
 	</div>
-	
 
 	<div class="modal-footer">
     	<button class="btn waves-effect waves-light submeet coursemodal blue-grey " >Okay &nbsp;<i class="material-icons">done_all</i></button>
     </div>
-</div>
+  </div>
 
-<!-- Results container over here -->
-
-<!-- main results-->
-<div class="container">
-	
-	<div class="row">
-        <div class="col s12 m12 l12">
-          <div class="card white">
-			<div class="card-content">
-			
-				<div class="row center">
-					<h2><u>Result</u></h2>
-					<p>Maintained 100% success in all its academic years since its inception in 2009. All past students from explora successfully secured admissions in the top schools of architecture in the state.</p>
-				</div>
-			</div>
-		  </div>
-		</div>
-	</div>
-</div>
-<div class="container">
-     <div class="row">       
-	<?php
-	$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
-	$rowcounter=0;
-	$sql = "select * from result order by score desc";
-	$result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
-		while($row=mysqli_fetch_array($result))
-			{?>
-				
-					<div class="col s6 m3 l2">
-						<div class="card">
-							<div class="card-image">
-								<img src="<?php echo "admin/".$row[4]?>">
-								<span class="card-title"></span>
-							</div>
-							<div class="card-content center">
-								<p><b><?php echo $row[1]?></b></p>
-								<p><b>Score:<?php echo $row[2]?></b></p>
-								<p><b><?php echo $row[3]?></b></p>
-							</div>
-						</div>
-					</div>
-			<?php
-			
-			$rowcounter++;	
-		}
-			?>
-	
-
-</div>
-</div>
-<!-- national exams over here-->
-
-<!-- main results-->
-<div class="container">
-	
-	<div class="row">
-        <div class="col s12 m12 l12">
-          <div class="card white">
-			<div class="card-content">
-			
-				<div class="row center">
-					<h5>Explora’s achievements are not only marked at state level but also at National level (Online Exams)</h5>
-					
-				</div>
-				
-			</div>
-			</div>
-			</div>
-			</div>
-            
-		 
-
-</div>
-
-
-<!-- Results container finished here -->
-<footer class="page-footer grey">
+  <footer class="page-footer grey">
     <div class="container footer">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Explora Academy of Design</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <p class="grey-text text-lighten-4">Studio 2, First Floor, <br>Cross Road Complex, <br>Next to Mr.Puff, <br>Near to Domino's Pizza, <br>Subhanpura, Vadodara - 390023</p>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Quick Links</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a href="key_people.html" class="white-text">Key People</a></li>
+				<li><a href="#our_course" class="white-text modal-trigger">Course</a></li>
+			    <li><a href="results.php" class="white-text">Results</a></li>
+			    <li><a href="gallery.html" class="white-text">Gallery</a></li>
+			    <li><a href="#contact" class="white-text modal-trigger">Contact Us</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
@@ -245,9 +214,8 @@
       </div>
     </div>
   </footer>
-  
-  <script src="js/jquery.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/resultinit.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
   </body>
 </html>

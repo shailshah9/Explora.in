@@ -14,7 +14,7 @@
 <div class="container">
 	<div class="row main-thing">
 		<h2 class="center">New Registrations</h2>
-	    <form name="login_form" id="reg_form" method="POST" enctype="multipart/form-data" class="col s12 white-text" action="register.php">
+	    <form name="login_form" id="login_form" method="POST" enctype="multipart/form-data" class="col s12 white-text" action="register.php">
 	      	<div class="row">
                 <p class="center">
 					  <input name="group2" type="radio" id="nata" value="nata" checked/>

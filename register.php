@@ -1,13 +1,13 @@
 <?php
 
-$group=$_POST['group2'];
+/*$group=$_POST['group2'];
 $fname=$_POST['fname'];
 $lname=$_POST['lname'];
 $surname=$_POST['surname'];
 $email=$_POST['email'];
 $mob=$_POST['mob'];
 $address=$_POST['address'];
-$dob=$_POST['dob'];
+$dob=$_POST['dob'];*/
 $flag1=0;
 $flag2=0;
 $target_dir = "uploads/";
@@ -36,6 +36,12 @@ if ($uploadOk == 0) {
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
+}
+
+if($flag1)
+{
+
+//insert code here
 }
 
 ?>

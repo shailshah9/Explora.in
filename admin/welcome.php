@@ -108,9 +108,10 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
 			            <div class="card-content white-text">
 			              <span class="card-title">Applications' Approval Status</span>
 			              <p class="thiscard">
-			              	<a class="waves-effect waves-light red lighten-2 btn-large"><i class="material-icons right">announcement</i>Pending</a>
+			              	<a href="pending.php" class="waves-effect waves-light red lighten-2 btn-large"><i class="material-icons right">announcement</i>Pending</a>
 			              	<a class="waves-effect waves-light green lighten-2 btn-large"><i class="material-icons right">done_all</i>Approved</a>
-			              	<a href="logout.php" class="waves-effect waves-light  brown lighten-2 btn-large"><i class="material-icons right">keyboard_tab</i>Logout</a>
+			              	<a href="results.php" class="waves-effect waves-light  brown lighten-2 btn-large"><i class="material-icons right">assessment</i>Add Result</a>
+			              	<a href="logout.php" class="waves-effect waves-light  cyan lighten-2 btn-large"><i class="material-icons right">keyboard_tab</i>Logout</a>
 			              </p>
 			            </div>
 			          </div>
@@ -214,23 +215,8 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
       </div>
     </div>
   </footer>
-  <script src="../js/demo.js"></script>
   <script src="../js/jquery.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script src="../js/init.js"></script>
-  <script type="text/javascript">
-  	$(document).ready(function() {
-  		$('input:radio[name="group1"]').change(function(){
-	        if ($(this).is(':checked') && $(this).val() == 'enquiry') {
-	            $('#enqq').show();
-	            $('#yob').show();
-	        }
-	        else {
-	        	$('#enqq').hide();
-	        	$('#yob').hide();
-	        }
-	    });
- 	});
-  </script>
   </body>
 </html>
