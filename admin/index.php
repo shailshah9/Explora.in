@@ -64,7 +64,7 @@
 		text-align: center;
 	}
 	@media only screen and (max-width : 600px) {
-		.main-thing{
+		.main-thing{ 
 			width: 90%;
 			height: 78%;
 			padding: 15px 15px 25px 10px;

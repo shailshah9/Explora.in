@@ -13,6 +13,12 @@
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="icon" href="media/logo.png">
+	<style>
+	body{
+  		background: url(media/cardbg.png);
+  		background-repeat: repeat;
+	}
+	</style>
 </head>
 <body>
 	<ul id='dropdown1' class='dropdown-content'>
