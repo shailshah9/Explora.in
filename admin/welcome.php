@@ -110,8 +110,11 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
 			              <p class="thiscard">
 			              	<a href="pending.php" class="waves-effect waves-light red lighten-2 btn-large"><i class="material-icons right">announcement</i>Pending</a>
 			              	<a class="waves-effect waves-light green lighten-2 btn-large"><i class="material-icons right">done_all</i>Approved</a>
-			              	<a href="results.php" class="waves-effect waves-light  brown lighten-2 btn-large"><i class="material-icons right">assessment</i>Add Result</a>
 			              	<a href="logout.php" class="waves-effect waves-light  cyan lighten-2 btn-large"><i class="material-icons right">keyboard_tab</i>Logout</a>
+			              </p>
+			              <p class="thiscard">
+			              	<a href="results.php" class="waves-effect waves-light  brown lighten-2 btn-large"><i class="material-icons right">assessment</i>Add Result</a>
+			              	<a href="gallery.php" class="waves-effect waves-light  orange lighten-2 btn-large"><i class="material-icons right">image</i>Gallery</a>
 			              </p>
 			            </div>
 			          </div>
