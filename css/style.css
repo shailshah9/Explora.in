@@ -195,8 +195,12 @@ p {
 }
 
 .submeet{
-  margin: 10px 30px 30px 0px !important;
-  vertical-align: top;
+  margin: 20px 30px 20px 0px !important;
+  vertical-align: top !important;
+}
+
+.submeet i{
+  vertical-align: bottom;
 }
 
 .button-collapse {

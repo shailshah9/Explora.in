@@ -503,7 +503,7 @@
             </div>
           </div>
         </div><!-- /card -->
-		<a class="waves-effect waves-light btn teal right res">More Results.. &nbsp;&nbsp;</a>
+		<a class="waves-effect waves-light btn teal right res" href="results.php">More Results.. &nbsp;&nbsp;</a>
       </div><!-- /section -->
 	  
 </div>
