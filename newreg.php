@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(!isset($_SESSION['otpl'])) header('location:otp.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +15,7 @@
 	<link rel="icon" href="media/logo.png">
 </head>
 <body>
+	<?php unset($_SESSION['otpl']);?>
 <div class="container">
 	<div class="row main-thing">
 		<h2 class="center">New Registrations</h2>

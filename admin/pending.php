@@ -65,120 +65,32 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
 		</div>
 	</nav>
 
-	<div id="contact" class="modal">
-		<div class="modal-header"><h5>Contact Us</h5></div>
-    	<div class="modal-content">
-            <div class="row">
-		        <div class="col s12 m6">
-		          <div class="card card3 grey ">
-		            <div class="card-content white-text">
-		              <span class="card-title">Address</span><br><br>
-		              Studio 2, First Floor <br>Cross Road Complex <br>Next to Mr.Puff, <br>Near to Domino's Pizza, <br>Subhanpura, Vadodara - 390023
-		            </div>
-		          </div>
-		        </div>
-		        <div class="col s12 m6">
-		          <div class="card card3 grey ">
-		            <div class="card-content white-text">
-		              <span class="card-title">Contact</span>
-		              <div><span>Ar. Manoj Patel: </span><a href="tel:9924376644"><u class="white-text"><span>+91 9924376644</span></u></a></div>
-		              <div><span>Ar. Parth Chitte: </span><a href="tel:9998130018"><u class="white-text"><span>+91 9998130018</span></u></a></div>
-		            </div>
-		          </div>
-		          <div>
-	                <div>
-	                	<a href="http://www.facebook.com/exploraacademy"><span class="fbicon large btn-floating btn-large waves-effect waves-light"></span></a>
-	                	<a href="mailto:hello@explora.in" class="btn-floating btn-large waves-effect waves-light grey yo"><i class="material-icons large">email</i></a></div>
-	              </div>
-		        </div>
-		    </div>
-		</div>
-		<div class="modal-footer">
-			<button class="btn coursemodal waves-effect waves-light submeet" type="submit" name="submit">Okay &nbsp;<i class="material-icons">done_all</i></button>
-		</div>
-	</div>
-
+	
 	<div class="container">
 		<section>
-			<h3 class="center">ADMIN PANEL</h3>
-			<p>
-				<div class="row">
-			        <div class="col s12 m12 l12">
-			          <div class="card blue-grey darken-1">
-			            <div class="card-content white-text">
-			              <span class="card-title">Applications' Approval Status</span>
-			              <p class="thiscard">
-			              	<a href="pending.php" class="waves-effect waves-light red lighten-2 btn-large"><i class="material-icons right">announcement</i>Pending</a>
-			              	<a class="waves-effect waves-light green lighten-2 btn-large"><i class="material-icons right">done_all</i>Approved</a>
-			              	<a href="logout.php" class="waves-effect waves-light  brown lighten-2 btn-large"><i class="material-icons right">keyboard_tab</i>Logout</a>
-			              </p>
-			            </div>
-			          </div>
-			        </div>
-			    </div>
-			</p>
+			<h3 class="center">Pending</h3>
 		</section>
 	</div>
-
-	<div id="our_course" class="modal">
-	    <div class="modal-content modal-course">
-			<div class="card card3 blue-grey darken-1">
-	        <div class="card-titl"><h4>Our Course</h4></div>
-	        <div class="card-content thiscard white-text">
-	            <h5><strong>NATA </strong></h5>
-				<p>The National Aptitude Test in Architecture (<strong>NATA</strong>), is an examination conducted for admission to undergraduate Architecture  courses  at any recognized institute in India. It judges the basic designing aptitude of  the applicants. It is mandatory for admission to a recognized undergraduate architecture course anywhere in India.</p>
-				<br/>
-
-				<p><b>How to apply for NATA 2015:</b><br>
-				Candidates need to apply NATA 2015 online application form through <a href="http://nata.in">www.nata.in</a>. Candidate must fill form in appropriate manner with all mandatory details.</p>
-				<br/>
-
-				<p><b>NATA Exam 2015 Eligibility:</b><br>
-				Candidates should have qualified 10+2 or equivalent from a recognized Board/University with Mathematics as a subject of examination with at least 50% aggregate marks <b><u>OR</u></b> Candidates should have qualified 10+3 Diploma (any stream) recognized by Central/ State Governments with 50% aggregate marks</p>
-				<br/>
-
-				<p><b>NATA 2015 Question paper consists of two parts:</b><br>
-				Drawing Test – 100 marks <br>
-				Duration of test – 2 hours <br><br>
-				Aesthetic Sensitivity Test – 100 marks<br>
-				Duration of test – 1 hour</p>
-				<br/>
-
-				<p><b>NATA 2015 Syllabus, Test Structure:</b><br>
-				The exam will be of 3 hrs. One has to clear the NATA eligibility criteria before applying. The test is divided into 2 sections. As per the Council of Architecture, a candidate applying to any school/ college of Architecture in India should have achieved 40% score in NATA, i.e. at least 80/200, for consideration of admission into first year B.Arch course.</p>
-				<br/>
-
-				<h5>Test 1</h5>
-				<h6>The drawing aptitude of the candidate shall be judged on the following aspects</h6>
-				<ol>
-					<li>Ability to sketch</li>
-					<li>Visualizing and Drawing</li>
-					<li>Sense of Perspective Drawing</li>
-					<li>Creating 2D and 3D Composition</li> 
-					<li>Understanding of scale and sense of proportion</li>
-					<li>Memory drawing from experience</li>
-				</ol>
-				<br/>
-
-				<h5>Test 2</h5>
-				<h6>Aesthetic sensitivity is to evaluate candidates perception, imagination, observation, creativity and communication and architectural awareness.</h6><br>
-				<h6>The test shall be of objective type and comprise of topics related to:</h6>
-				<ol>
-					<li>Visualizing 3D objects from 2D drawings</li>
-					<li>Visualizing different sides of 3D objects</li>
-					<li>Analytical Reasoning</li>
-					<li>Mental Ability</li> 
-					<li>Imaginative Comprehension and Expression</li>
-					<li>Architectural Awareness</li>
-				</ol>
-	        </div>
-	    </div>	
+	<div class="container">
+		<div class="row">
+        <div class="col s6 m3 l2">
+          <div class="card">
+            <div class="card-image">
+              <img src="../media/KeyPeople/3.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
 	</div>
 
-	<div class="modal-footer">
-    	<button class="btn waves-effect waves-light submeet coursemodal blue-grey " >Okay &nbsp;<i class="material-icons">done_all</i></button>
-    </div>
-  </div>
 
   <footer class="page-footer grey">
     <div class="container footer">

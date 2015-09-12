@@ -14,22 +14,17 @@ $study=$_GET['study'];
 $mob=$_GET['mob'];
 $address=$_GET['address'];
 $enqq=$_GET['enqq'];
-echo $name;
-echo $email;
-echo $study;
-echo $mob;
-echo $address;
 
 
 $mail = new PHPMailer;
-//$mail->SMTPDebug = 3;
+//$mail->SMTPDebug = 4;
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'sg2plcpnl0054.prod.sin2.secureserver.net';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'dbp3435@gmail.com';          // SMTP username
-$mail->Password = 'dhaval1019';               // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to
+$mail->Username = 'admin@explora.in';          // SMTP username
+$mail->Password = 'random1234rewqA';               // SMTP password
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465;                                    // TCP port to connect to
 
 $mail->SMTPOptions = array(
     'ssl' => array(
@@ -39,27 +34,24 @@ $mail->SMTPOptions = array(
     )
 );
 
-$mail->From = 'dbp3435@gmail.com';
+$mail->From = 'admin@explora.in';
 $mail->FromName = $name;
-$mail->addAddress($email, $name);     // Add a recipient
+$mail->addAddress('enquiry@explora.in', 'Enquiry');     // Add a recipient
 
-$mail->addReplyTo('rajani.tanmay@gmail.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
+$mail->addReplyTo($email, $name);
 
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Explora enquiry from '.$name;
 $mail->Body    = $enqq;
-//$mail->AddAttachment('dhaval.pdf','helo.pdf');
+
 if(!$mail->send()) {
+    //$mail->SMTPDebug=2;
     echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+   // echo 'Mailer Error: ' . $mail->ErrorInfo;
 	
 } else {
-    header('Location: http://localhost:8181/Explora.in/newregtext.php');
+    echo '<script type="text/javascript"> alert("Enquiry Submitted Successfully")</script>';
+    echo "<script type='text/javascript'>window.location='newenqtext.php'</script>";
 }
 
 

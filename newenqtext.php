@@ -17,10 +17,10 @@
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title"><h4 class="center">Thank you</h4></span>
-              <p>Thank you for showing your interest in joining our institute.
-			  To complete your registration process, check your mail.
+              <p>Thank you for showing your interest in our institute.
+			  Your enquiry is submitted to us and our representative will reach you very soon.
 			  </p>
-			  <p>For any other queries,feel free to reach us at <a href="mailto:info@explora.in">info@explora.in</a></p>
+			  <p>For any other queries,feel free to reach us at <a href="mailto:enquiry@explora.in">enquiry@explora.in</a></p>
 			  
             </div>
             <div class="card-action">
