@@ -3,7 +3,6 @@
     $('.button-collapse').sideNav();
 	$('.hey').slider({height:500});
 	$('.hello').slider({height:400, indicators:false,interval:8000});
-	
 	$('.modal-trigger').leanModal({
 	      dismissible: true,
 	      opacity: .8,
@@ -13,7 +12,7 @@
   	);
   });
   $('span.headername').click(function () {
-  	window.location.href='index.html';
+  	window.location.href='index.php';
   })
  $('.parallax').parallax();
  $('select').material_select();

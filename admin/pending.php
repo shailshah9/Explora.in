@@ -1,6 +1,12 @@
 <?php
 session_start();
 if(!isset($_SESSION['unm'])) header('location:index.php');
+//$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
+$connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
+$rowcounter=0;
+$sql = "select * from registration where flag=0 order by first_name desc";
+$result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +18,7 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
 	<link rel="stylesheet" href="css/common.css">
 	<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<style type="text/css">
 	.thiscard{
 		padding: 30px;
@@ -21,22 +28,27 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
 	.thiscard a{
 		margin: 15px;
 	}
+	.card a {
+		color: black;
+	}
 	</style>
 	<script src="../js/modernizr.js"></script>
 	<link rel="icon" href="../media/logo.png">
 </head>
 <body>
 	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="history.html">History</a></li>
-		<li><a href="key_people.html">Key People</a></li>
-		<li><a href="#our_course" class="modal-trigger">Course</a></li>
-		<li><a href="methodology.html">Teaching Methodology</a></li>
+		<li><a href="#" class="white-text">1</a></li>
+		<li><a href="#" class="white-text">2</a></li>
+		<li><a href="#" class="white-text">3</a></li>
+		<li><a href="#" class="white-text">4</a></li>
+		<li><a href="#" class="white-text">5</a></li>
 	</ul>
 	<ul id='dropdown2' class='dropdown-content'>
-		<li><a href="history.html">History</a></li>
-		<li><a href="key_people.html">Key People</a></li>
-		<li><a href="#our_course" class="modal-trigger">Course</a></li>
-		<li><a href="methodology.html">Teaching Methodology</a></li>
+		<li><a href="#" class="white-text">1</a></li>
+		<li><a href="#" class="white-text">2</a></li>
+		<li><a href="#" class="white-text">3</a></li>
+		<li><a href="#" class="white-text">4</a></li>
+		<li><a href="#" class="white-text">5</a></li>
 	</ul>
 
 	<nav role="navigation">
@@ -47,19 +59,20 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
 			</a>
 			
 			<ul class="right hide-on-med-and-down">
-				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">About Us<i class="material-icons suffix" style="float: right;">keyboard_arrow_down</i></a></li>
-			    <li><a href="results.php">Results</a></li>
-			    <li><a href="gallery.html">Gallery</a></li>
-			    <li><a href="#contact" class="modal-trigger">Contact Us</a></li>
-			    <li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;">phone</i><span style="float: left">9924376644</span></a></li>
+				
+            	<li><a href="#" class="white-text">1</a></li>
+				<li><a href="#" class="white-text">2</a></li>
+			    <li><a href="#" class="white-text">3</a></li>
+			    <li><a href="#" class="white-text">4</a></li>
+			    <li><a href="#" class="white-text">5</a></li>
 			</ul>
 			<ul id="nav-mobile" class="side-nav">
-				<li><a class="dropdown-button" href="#!" data-activates="dropdown2">About Us<i class="material-icons suffix" style="float: right;vertical-align:bottom; padding-top: 17px;">keyboard_arrow_right</i></a></li>
-				<li><a href="results.php">Results</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="#contact" class="modal-trigger">Contact Us</a></li>
-				<li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;margin-top:17px;">phone</i><span style="float: left;vertical-align:top">9924376644</span></a></li>
-				<li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;margin-top:17px;">phone</i><span style="float: left;vertical-align:top">9924376644</span></a></li>
+				
+            	<li><a href="#" class="white-text">1</a></li>
+				<li><a href="#" class="white-text">2</a></li>
+			    <li><a href="#" class="white-text">3</a></li>
+			    <li><a href="#" class="white-text">4</a></li>
+			    <li><a href="#" class="white-text">5</a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>
@@ -68,28 +81,64 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
 	
 	<div class="container">
 		<section>
-			<h3 class="center">Pending</h3>
+			<h3 class="center">Pending Students</h3>
 		</section>
 	</div>
 	<div class="container">
 		<div class="row">
+		<?php
+			while($row=mysqli_fetch_array($result))
+			{
+		?>
         <div class="col s6 m3 l2">
-          <div class="card">
+          <div class="card result-card">
             <div class="card-image">
-              <img src="../media/KeyPeople/3.jpg">
-              <span class="card-title">Card Title</span>
+              <img src="<?php echo "../".$row['img_path'];?>">
+              <span class="card-title"><?php echo $row['first_name']." ".$row['surname'];?></span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
+              <p><b>Fees:</b><?php echo $row['f_reg'];?></p>
+              <p><b>Mob:</b><?php echo $row['mobile_no'];?></p><br/>
+              <center>
+                <p><a onclick="return confirm('Are you sure , you want to delete?')" 
+                  href="delete.php?idv=<?php echo $row['s_id'];?>"><i class="material-icons">delete</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a class="modal-trigger mod-ajax" href="#approve" data-id="<?php echo $row['s_id'];?>" data-toggle="modal"><i class="material-icons">done_all</i></a></p>
+                </center>
             </div>
           </div>
         </div>
+        <?php }?>
       </div>
 	</div>
+
+	
+  <div id="approve" class="modal modal-fixed-footer">
+    <div class="modal-content modal-body">
+      <h4>Details</h4>
+      <p>
+          <form method="POST" action="approve.php">
+          <div class="row mar-modal black-text">
+              <div class="input-field col s12 m12 l6 black-text">
+                <input id="form" type="number" class="validate" name="formno">
+                <label for="form">Form no:</label>
+                <input class="modal-trigger" type="hidden" name="idv" id="idv">
+              </div>
+          </div>
+          <div class="row mar-modal black-text">
+              <div class="input-field col s12 m12 l6 black-text">
+                <input id="fees" type="number" class="validate" name="totalfeesm">
+                <label for="fees">Total Fees:</label>
+              </div>
+          </div>
+    </p>
+  </div>
+    <div class="modal-footer">
+      <button class="btn waves-effect waves-light " type="submit" name="action">Approve&nbsp;
+        <i class="material-icons">done_all</i>
+      </button></form>
+    </div>
+  </div>
+</div>  
 
 
   <footer class="page-footer grey">
@@ -102,11 +151,11 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
         <div class="col l3 s12">
           <h5 class="white-text">Quick Links</h5>
           <ul>
-            <li><a href="key_people.html" class="white-text">Key People</a></li>
-				<li><a href="#our_course" class="white-text modal-trigger">Course</a></li>
-			    <li><a href="results.php" class="white-text">Results</a></li>
-			    <li><a href="gallery.html" class="white-text">Gallery</a></li>
-			    <li><a href="#contact" class="white-text modal-trigger">Contact Us</a></li>
+            	<li><a href="#" class="white-text">1</a></li>
+				<li><a href="#" class="white-text">2</a></li>
+			    <li><a href="#" class="white-text">3</a></li>
+			    <li><a href="#" class="white-text">4</a></li>
+			    <li><a href="#" class="white-text">5</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
@@ -129,5 +178,12 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
   <script src="../js/jquery.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script src="../js/init.js"></script>
+  <script type="text/javascript">
+  var x;
+  $(document).on("click", ".mod-ajax", function () {
+  var myBookId = $(this).data('id');
+  $(".modal-body #idv").val( myBookId);  
+  });
+  </script>
   </body>
 </html>

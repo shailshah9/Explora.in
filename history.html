@@ -16,6 +16,12 @@
   .title2{
     padding-bottom: 20px !important;
   }
+  .slider .slides li.active{
+    height: 500px;
+  }
+  .slider .slides li img{
+    height: 100%;
+  }
   @media only screen and (min-width: 601px){
     .row .col.m6 {
       width: 100%;
@@ -44,7 +50,7 @@
 
 	<nav role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="index.html" class="brand-logo">
+			<a id="logo-container" href="index.php" class="brand-logo">
 				<img src="media/logo.png" class="responsive-img logo1"></img>
 				<span class="headername">Explora Academy of  Design</span>
 			</a>
@@ -126,10 +132,13 @@
           <button class="btn waves-effect waves-light submeet coursemodal blue-grey " >Okay &nbsp;<i class="material-icons">done_all</i></button>
       </div>
   </div>
-		
-<div class="parallax-container valign-wrapper">
-	<div class="parallax"><img src="media/History/1.jpg" alt="Explora History"></div>
-</div>
+<div class="slider hi">
+    <ul class="slides">
+      <li>
+        <img src="media/History/1.jpg">
+      </li>
+    </ul>
+  </div>
 
 <div class="container">
   <div class="row">
@@ -186,6 +195,6 @@
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="js/histinit.js"></script>
   </body>
 </html>

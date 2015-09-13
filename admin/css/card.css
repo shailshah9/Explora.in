@@ -1,0 +1,14 @@
+.result-card{
+	min-height: 300px;
+	max-height:300px;
+}
+.result-card .card-image{
+	height: 175px;
+	width: inherit;
+}
+.result-card .card-content{
+	vertical-align: middle;
+}
+.result-card .card-image img{
+	height: inherit;
+}

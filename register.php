@@ -19,7 +19,7 @@ $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 if(isset($_POST["action"])) {
     $check = getimagesize($_FILES["file"]["tmp_name"]);
     if($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
+        //echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
     } else {
         echo "File is not an image.";
@@ -34,7 +34,7 @@ if ($uploadOk == 0) {
         //echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded. ";
 		$connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
         //$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
-        $sql = "INSERT INTO `registration`(`course`, `first_name`, `middle_name`, `surname`, `address`, `mobile_no`,`img_path`, `dob`) VALUES ('$group','$fname','$surname','$lname','$address',$mob,'$target_file','$dob')";
+        $sql = "INSERT INTO `registration`(`course`, `first_name`, `middle_name`, `surname`, `address`, `mobile_no`,`img_path`, `dob`,`email`) VALUES ('$group','$fname','$surname','$lname','$address',$mob,'$target_file','$dob','$email')";
         $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
         if($result>0)
         {

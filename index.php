@@ -140,7 +140,7 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="mob" required type="tel" class="validate" name="mob">
+                  <input id="mob" required type="number" maxlength="10" class="validate" name="mob">
                   <label for="mob">Contact</label>
                 </div>
               </div>
@@ -152,7 +152,7 @@
               </div>
 			  <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="address" required class="materialize-textarea validate" name="address"></textarea>
+                  <textarea id="address" required maxlength="135" class="materialize-textarea validate" name="address"></textarea>
                   <label for="address">Address</label>
                 </div>
               </div>

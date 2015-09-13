@@ -14,6 +14,9 @@
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="icon" href="media/logo.png">
 	<style>
+	.trans{
+			background-color: transparent;
+	}
 	body{
   		background: url(media/cardbg.png);
   		background-repeat: repeat;
@@ -50,7 +53,7 @@
 
 	<nav role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="index.html" class="brand-logo">
+			<a id="logo-container" href="index.php" class="brand-logo">
 				<img src="media/logo.png" class="responsive-img logo1"></img>
 				<!---->
 				<span class="headername">Explora Academy of  Design</span>
@@ -60,7 +63,7 @@
 				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">About Us<i class="material-icons suffix" style="float: right;">keyboard_arrow_down</i></a></li>
 			    <li><a href="results.php">Results</a></li>
 			    <li><a href="gallery.html">Gallery</a></li>
-			    <li><a href="#">Contact Us</a></li>
+			    <li><a class="modal-trigger" href="#contact">Contact Us</a></li>
 			    <li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;">phone</i><span style="float: left">9924376644</span></a></li>
 			</ul>
 			<ul id="nav-mobile" class="side-nav">
@@ -68,26 +71,17 @@
 				<li><a class="dropdown-button" href="#!" data-activates="dropdown2">About Us<i class="material-icons suffix" style="float: right;vertical-align:bottom; padding-top: 17px;">keyboard_arrow_right</i></a></li>
 				<li><a href="results.php">Results</a></li>
 				<li><a href="#">Gallery</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a class="modal-trigger" href="#contact">Contact Us</a></li>
 				<li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;margin-top:17px;">phone</i><span style="float: left;vertical-align:top">9924376644</span></a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>
 	</nav>
   
-	<div class="slider">
+	<div class="slider hi">
 		<ul class="slides">
 			<li>
-				<img src="media/ResultImages/Banner/1.jpg">
-			</li>
-			<li>
-				<img src="media/ResultImages/Banner/2.jpg">
-			</li>
-			<li>
-				<img src="media/ResultImages/Banner/3.jpg">
-			</li>
-			<li>
-				<img src="media/ResultImages/Banner/4.jpg">
+				<img src="media/Parallax/result.jpg">
 			</li>
 		</ul>
 	</div>
@@ -156,17 +150,19 @@
 </div>
 
 <!-- Results container over here -->
-
+<div class="container">
+	<div class="row">
+	</div>
+</div>
 <!-- main results-->
 <div class="container">
-	
 	<div class="row">
         <div class="col s12 m12 l12">
-          <div class="card white">
+          <div class="card trans">
 			<div class="card-content">
 			
 				<div class="row center">
-					<h2><u>Result</u></h2>
+					<h3>Result</h3>
 					<p>Maintained 100% success in all its academic years since its inception in 2009. All past students from explora successfully secured admissions in the top schools of architecture in the state.</p>
 				</div>
 			</div>
@@ -178,6 +174,7 @@
      
 	<?php
 	$connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
+	//$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
 	$rowcounter=0;
 	$sql = "select * from result order by score desc";
 	$result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
@@ -215,10 +212,9 @@
 
 <!-- main results-->
 <div class="container">
-	
 	<div class="row">
         <div class="col s12 m12 l12">
-          <div class="card white">
+          <div class="card trans" >
 			<div class="card-content">
 			
 				<div class="row center">
@@ -235,6 +231,38 @@
 
 </div>
 
+ <div id="contact" class="modal">
+		<div class="modal-header"><h5>Contact Us</h5></div>
+    	<div class="modal-content">
+            <div class="row">
+		        <div class="col s12 m6">
+		          <div class="card card3 grey ">
+		            <div class="card-content white-text">
+		              <span class="card-title">Address</span><br><br>
+		              Studio 2, First Floor <br>Cross Road Complex <br>Next to Mr.Puff, <br>Near to Domino's Pizza, <br>Subhanpura, Vadodara - 390023
+		            </div>
+		          </div>
+		        </div>
+		        <div class="col s12 m6">
+		          <div class="card card3 grey ">
+		            <div class="card-content white-text">
+		              <span class="card-title">Contact</span>
+		              <div><span>Ar. Manoj Patel: </span><a href="tel:9924376644"><u class="white-text"><span>+91 9924376644</span></u></a></div>
+		              <div><span>Ar. Parth Chitte: </span><a href="tel:9998130018"><u class="white-text"><span>+91 9998130018</span></u></a></div>
+		            </div>
+		          </div>
+		          <div>
+	                <div>
+	                	<a href="http://www.facebook.com/exploraacademy"><span class="fbicon large btn-floating btn-large waves-effect waves-light"></span></a>
+	                	<a href="mailto:hello@explora.in" class="btn-floating btn-large waves-effect waves-light grey yo"><i class="material-icons large">email</i></a></div>
+	              </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn contactmodal waves-effect waves-light submeet" type="submit" name="submit">Okay &nbsp;<i class="material-icons">done_all</i></button>
+		</div>
+	</div>
 
 <!-- Results container finished here -->
 <footer class="page-footer grey">

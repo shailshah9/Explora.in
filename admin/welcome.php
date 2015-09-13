@@ -109,7 +109,7 @@ if(!isset($_SESSION['unm'])) header('location:index.php');
 			              <span class="card-title">Applications' Approval Status</span>
 			              <p class="thiscard">
 			              	<a href="pending.php" class="waves-effect waves-light red lighten-2 btn-large"><i class="material-icons right">announcement</i>Pending</a>
-			              	<a class="waves-effect waves-light green lighten-2 btn-large"><i class="material-icons right">done_all</i>Approved</a>
+			              	<a href="approved.php" class="waves-effect waves-light green lighten-2 btn-large"><i class="material-icons right">done_all</i>Approved</a>
 			              	<a href="logout.php" class="waves-effect waves-light  cyan lighten-2 btn-large"><i class="material-icons right">keyboard_tab</i>Logout</a>
 			              </p>
 			              <p class="thiscard">
