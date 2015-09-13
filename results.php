@@ -18,6 +18,20 @@
   		background: url(media/cardbg.png);
   		background-repeat: repeat;
 	}
+	.result-card{
+		min-height: 300px;
+		max-height:300px;
+	}
+	.result-card .card-image{
+		height: 175px;
+		width: inherit;
+	}
+	.result-card .card-content{
+		vertical-align: middle;
+	}
+	.result-card .card-image img{
+		height: inherit;
+	}
 	</style>
 </head>
 <body>
@@ -161,31 +175,36 @@
 	</div>
 </div>
 <div class="container">
-     <div class="row">       
+     
 	<?php
-	$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
+	$connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
 	$rowcounter=0;
 	$sql = "select * from result order by score desc";
 	$result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
 		while($row=mysqli_fetch_array($result))
-			{?>
+			{
+				if($rowcounter==0 || $rowcounter%6==0){
+					echo '<div class="row">';
+				}
+				?>
 				
 					<div class="col s6 m3 l2">
-						<div class="card">
+						<div class="card result-card">
 							<div class="card-image">
 								<img src="<?php echo "admin/".$row[4]?>">
 								<span class="card-title"></span>
 							</div>
 							<div class="card-content center">
-								<p><b><?php echo $row[1]?></b></p>
-								<p><b>Score:<?php echo $row[2]?></b></p>
-								<p><b><?php echo $row[3]?></b></p>
+								<div><b><?php echo $row[1]?></br>
+								Score:<?php echo $row[2]?></br>
+								<?php echo $row[3]?></b></div>
 							</div>
 						</div>
 					</div>
 			<?php
 			
 			$rowcounter++;	
+			if($rowcounter%6==0) echo '</div>';
 		}
 			?>
 	
