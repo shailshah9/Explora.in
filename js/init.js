@@ -29,5 +29,8 @@
   });
   $(document).ready(function() {
     $('input#input_text, textarea#textarea1').characterCounter();
+    setInterval(function() {
+      $('.add').toggleClass('addb');
+    }, 800);
   });
 })(jQuery);

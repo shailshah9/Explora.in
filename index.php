@@ -284,10 +284,10 @@
               				<span class="card-title black-text"><b>Tanmay Rajani</b></span>
             			</div>
             			<div class="col s12 center">
-              				<ul>
+              			  <ul>
 				            <li><a href="https://www.facebook.com/tanmay.rajani" target="_new"><span class="fdicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
 				            <li><a href="https://twitter.com/rajani_tanmay" target="_new"><span class="ticon large btn-floating btn-large waves-effect waves-light"></span></a></li>
-				            <li><a href="https://in.linkedin.com/in/tanmayrajani" target="_new"><span class="linicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="https://www.linkedin.com/in/tanmayrajani" target="_new"><span class="linicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
 				            <li><a href="https://github.com/tanmayrajani" target="_new"><span class="gicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
 				          </ul>
             			</div>
