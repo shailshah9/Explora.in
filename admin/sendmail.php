@@ -2,9 +2,7 @@
       session_start();
       require('view/fpdf.php');
       // Create me a new pdf object:
-      $connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
-      //$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
-
+      include 'connection.php';
       $id=$_GET['idv'];
       $sql1='SELECT * FROM `registration` WHERE `s_id`='.$id;
       

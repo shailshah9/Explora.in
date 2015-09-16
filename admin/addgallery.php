@@ -21,7 +21,7 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded. \n";
 		$flag1=1;
-		$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
+		include 'connection.php';
 
 		$sql = "INSERT INTO gallery (`path`) VALUES ('$target_file')";
 		echo $sql;

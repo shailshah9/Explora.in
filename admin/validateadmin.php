@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
+include 'connection.php';
 $sql="select * from login";
 $query=mysqli_query($connection,$sql) or die("query failed1".mysqli_error());
 if(mysqli_num_rows($query)>0)

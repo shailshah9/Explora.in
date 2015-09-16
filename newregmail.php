@@ -38,7 +38,8 @@ $mail->From = 'info@explora.in';
 $mail->FromName = "Registration @ Explora Academy of Design";
 $mail->addAddress($email, $name);     // Add a recipient
 $otp1=str_split($mob,6);
-$otp=$otp1[1];
+$motp1=str_split($email,3);
+$otp=$motp1[0].$otp1[1];
 $mail->addReplyTo('info@explora.in', 'Information');
 
 $mail->isHTML(true);                                  // Set email format to HTML
@@ -53,9 +54,9 @@ if(!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 	
 } else {
-        $connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
+        include 'connection.php';
         
-        $sql = "INSERT INTO new_reg (`otp`,`flag`) VALUES ($otp,0)";
+        $sql = "INSERT INTO new_reg (`otp`,`flag`) VALUES ('$otp',0)";
         $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
 
 

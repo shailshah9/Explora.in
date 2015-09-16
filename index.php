@@ -48,7 +48,6 @@
 				<li><a href="gallery.php">Gallery</a></li>
 				<li><a href="#contact" class="modal-trigger">Contact Us</a></li>
 				<li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;margin-top:17px;">phone</i><span style="float: left;vertical-align:top">9924376644</span></a></li>
-				<li><a href="tel:9924376644"><i class="material-icons prefix" style="float: left;margin-top:17px;">phone</i><span style="float: left;vertical-align:top">9924376644</span></a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>
@@ -106,7 +105,12 @@
 			</div>        
 		</div>
   </div>
-
+<div class="container">
+  	<div class="row">
+  	<p class="center sha white-text"><marquee>2016 Registrations open. Check out the New Registration button below.</marquee></p>
+  	</div>
+  </div>
+  <div class="container">
 	<div id="register" class="modal">
 		<div class="modal-header"><h5>New Registrations</h5></div>
     	<form id="create-form" action="check.php" method="POST" name="create-form">
@@ -140,7 +144,7 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="mob" required type="number" maxlength="10" class="validate" name="mob">
+                  <input id="mob" required type="text" pattern="[0-9]{10}" maxlength="10" class="validate" name="mob">
                   <label for="mob">Contact</label>
                 </div>
               </div>
@@ -164,14 +168,13 @@
 	</div>
   <br>
   
-  <div class="container">
 	<div class="row">
         <div class="col s12 m12 l12">
         	<div class="card card3 light-green lighten-3 darken-1">
             	<div class="card-content white-text">
               		<span class="card-title white-text"><h4>Vision</h4></span>
               		<p class="text-darken-2">Explora differs from the conventional in terms of its vision. How, you might ask?<br>
-			Over the course of our 6 years of successfully budding potential architects and designers to their path to success, we have evolved our vision in two parts:</p>
+			Over the course of our 7 years of successfully budding potential architects and designers to their path to success, we have evolved our vision in two parts:</p>
 					<ul>
 						<li>
 							<div>
@@ -204,9 +207,9 @@
 	        </div>
         </div>
     </div>
-	<div class="row">
+	<div class="row trans">
         <div class="col s12 m12 l12">
-          	<div class="card card3 teal darken-1">
+          	<div class="card card3 black">
 	            <div class="card-content white-text">
 		            <span class="card-title center"><h4>Explora students selected in CEPT University (B.Arch)</h4></span>
 	            </div>
@@ -220,7 +223,7 @@
     	<div class="modal-content">
             <div class="row">
 		        <div class="col s12 m6">
-		          <div class="card card3 grey ">
+		          <div class="card card3 grey darken-1">
 		            <div class="card-content white-text">
 		              <span class="card-title">Address</span><br><br>
 		              Studio 2, First Floor <br>Cross Road Complex <br>Next to Mr.Puff, <br>Near to Domino's Pizza, <br>Subhanpura, Vadodara - 390023
@@ -228,7 +231,7 @@
 		          </div>
 		        </div>
 		        <div class="col s12 m6">
-		          <div class="card card3 grey ">
+		          <div class="card card3 grey darken-1">
 		            <div class="card-content white-text">
 		              <span class="card-title">Contact</span>
 		              <div><span>Ar. Manoj Patel: </span><a href="tel:9924376644"><u class="white-text"><span>+91 9924376644</span></u></a></div>
@@ -238,7 +241,7 @@
 		          <div>
 	                <div>
 	                	<a href="http://www.facebook.com/exploraacademy"><span class="fbicon large btn-floating btn-large waves-effect waves-light"></span></a>
-	                	<a href="mailto:hello@explora.in" class="btn-floating btn-large waves-effect waves-light grey yo"><i class="material-icons large">email</i></a></div>
+	                	<a href="mailto:info@explora.in" class="btn-floating btn-large waves-effect waves-light grey yo"><i class="material-icons large">email</i></a></div>
 	              </div>
 		        </div>
 		    </div>
@@ -247,6 +250,109 @@
 			<button class="btn coursemodal waves-effect waves-light submeet" type="submit" name="submit">Okay &nbsp;<i class="material-icons">done_all</i></button>
 		</div>
 	</div>
+	<div id="developers" class="modal">
+		<div class="modal-header cyan"><h5>Want to know more about us? Connect with us!</h5></div>
+    	<div class="modal-content">
+            <div class="row">
+		        <div class="col s12 m6">
+		          <div class="card card3 white darken-1">
+		            <div class="card-content black-text">
+		            	<div class="col s12 center">
+              				<img src="media/Developers/s1.png" alt="" class="td circle responsive-img">
+            			</div>
+            			<div class="col s12 center">
+              				<span class="card-title black-text"><b>Shail Shah</b></span>
+            			</div>
+            			<div class="col s12 center">
+              				<ul>
+				            <li><a href="http://on.fb.me/1UVSMfx" target="_new"><span class="fdicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="http://bit.ly/1OYhpRG" target="_new"><span class="ticon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="http://bit.ly/1NwZkLG" target="_new"><span class="linicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="http://bit.ly/1KpRjY0" target="_new"><span class="gicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				          </ul>
+            			</div>
+		              </div>
+		          </div>
+		        </div>
+		        <div class="col s12 m6">
+		          <div class="card card3 white darken-1">
+		            <div class="card-content black-text">
+		              <div class="col s12 center">
+              				<img src="media/Developers/t.jpg" alt="" class="td circle responsive-img">
+            			</div>
+            			<div class="col s12 center">
+              				<span class="card-title black-text"><b>Tanmay Rajani</b></span>
+            			</div>
+            			<div class="col s12 center">
+              				<ul>
+				            <li><a href="https://www.facebook.com/tanmay.rajani" target="_new"><span class="fdicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="https://twitter.com/rajani_tanmay" target="_new"><span class="ticon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="https://in.linkedin.com/in/tanmayrajani" target="_new"><span class="linicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="https://github.com/tanmayrajani" target="_new"><span class="gicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				          </ul>
+            			</div>
+		            </div>
+		          </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn coursemodal1 waves-effect waves-light submeet cyan" type="submit" name="submit">Okay &nbsp;<i class="material-icons">done_all</i></button>
+		</div>
+	</div>
+
+	<div id="contactkp" class="modal">
+		<div class="modal-header cyan"><h5>Contact us!</h5></div>
+    	<div class="modal-content">
+            <div class="row">
+		        <div class="col s12 m6">
+		          <div class="card card3 white darken-1">
+		            <div class="card-content black-text">
+		            	<div class="col s12 center">
+              				<img src="media/Developers/s1.png" alt="" class="td circle responsive-img">
+            			</div>
+            			<div class="col s12 center">
+              				<span class="card-title black-text"><b>Shail Shah</b></span>
+            			</div>
+            			<div class="col s12 center">
+              				<ul>
+				            <li><a href="http://on.fb.me/1UVSMfx" target="_new"><span class="fdicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="http://bit.ly/1OYhpRG" target="_new"><span class="ticon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="http://bit.ly/1NwZkLG" target="_new"><span class="linicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="http://bit.ly/1KpRjY0" target="_new"><span class="gicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				          </ul>
+            			</div>
+		              </div>
+		          </div>
+		        </div>
+		        <div class="col s12 m6">
+		          <div class="card card3 white darken-1">
+		            <div class="card-content black-text">
+		              <div class="col s12 center">
+              				<img src="media/Developers/t.jpg" alt="" class="td circle responsive-img">
+            			</div>
+            			<div class="col s12 center">
+              				<span class="card-title black-text"><b>Tanmay Rajani</b></span>
+            			</div>
+            			<div class="col s12 center">
+              				<ul>
+				            <li><a href="https://www.facebook.com/tanmay.rajani" target="_new"><span class="fdicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="https://twitter.com/rajani_tanmay" target="_new"><span class="ticon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="https://in.linkedin.com/in/tanmayrajani" target="_new"><span class="linicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				            <li><a href="https://github.com/tanmayrajani" target="_new"><span class="gicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
+				          </ul>
+            			</div>
+		            </div>
+		          </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn coursemodal1 waves-effect waves-light submeet cyan" type="submit" name="submit">Okay &nbsp;<i class="material-icons">done_all</i></button>
+		</div>
+	</div>
+
+
 
 	<div id="our_course" class="modal">
 	    <div class="modal-content modal-course">
@@ -257,22 +363,22 @@
 				<p>The National Aptitude Test in Architecture (<strong>NATA</strong>), is an examination conducted for admission to undergraduate Architecture  courses  at any recognized institute in India. It judges the basic designing aptitude of  the applicants. It is mandatory for admission to a recognized undergraduate architecture course anywhere in India.</p>
 				<br/>
 
-				<p><b>How to apply for NATA 2015:</b><br>
-				Candidates need to apply NATA 2015 online application form through <a href="http://nata.in">www.nata.in</a>. Candidate must fill form in appropriate manner with all mandatory details.</p>
+				<p><b>How to apply for NATA 2016:</b><br>
+				Candidates need to apply NATA 2016 online application form through <a href="http://www.nata.in" target="_new">www.nata.in</a>. Candidate must fill form in appropriate manner with all mandatory details.</p>
 				<br/>
 
-				<p><b>NATA Exam 2015 Eligibility:</b><br>
-				Candidates should have qualified 10+2 or equivalent from a recognized Board/University with Mathematics as a subject of examination with at least 50% aggregate marks <b><u>OR</u></b> Candidates should have qualified 10+3 Diploma (any stream) recognized by Central/ State Governments with 50% aggregate marks</p>
+				<p><b>NATA Exam 2016 Eligibility:</b><br>
+				Candidates should have qualified 10+2 <b><u>OR</u></b> equivalent from a recognized Board/University with Mathematics as a subject of examination with at least 50% aggregate marks <b><u>OR</u></b> Candidates should have qualified 10+3 Diploma (any stream) recognized by Central/ State Governments with 50% aggregate marks</p>
 				<br/>
 
-				<p><b>NATA 2015 Question paper consists of two parts:</b><br>
+				<p><b>NATA 2016 Question paper consists of two parts:</b><br>
 				Drawing Test – 100 marks <br>
 				Duration of test – 2 hours <br><br>
 				Aesthetic Sensitivity Test – 100 marks<br>
 				Duration of test – 1 hour</p>
 				<br/>
 
-				<p><b>NATA 2015 Syllabus, Test Structure:</b><br>
+				<p><b>NATA 2016 Syllabus, Test Structure:</b><br>
 				The exam will be of 3 hrs. One has to clear the NATA eligibility criteria before applying. The test is divided into 2 sections. As per the Council of Architecture, a candidate applying to any school/ college of Architecture in India should have achieved 40% score in NATA, i.e. at least 80/200, for consideration of admission into first year B.Arch course.</p>
 				<br/>
 
@@ -503,7 +609,7 @@
             </div>
           </div>
         </div><!-- /card -->
-		<a class="waves-effect waves-light btn teal right res" href="results.php">More Results.. &nbsp;&nbsp;</a>
+		<a class="waves-effect waves-light btn black right res" href="results.php">More Results.. &nbsp;&nbsp;</a>
       </div><!-- /section -->
 	  
 </div>
@@ -512,11 +618,11 @@
 </div>	
 </div>	
 <div class="parallax-container valign-wrapper thisone">
-	<div class="parallax"><img src="media/Parallax/bparallax_final.jpg" alt="Explora 2015 batch"></div>
+	<div class="parallax"><img src="media/Parallax/bparallax_final.jpg" alt="Explora 2016 batch"></div>
 </div>
 </div>
 
-  <footer class="page-footer grey">
+  <footer class="page-footer grey darken-1">
     <div class="container footer">
       <div class="row">
         <div class="col l6 s12">
@@ -536,17 +642,14 @@
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a href="http://www.facebook.com/exploraacademy" target="_new"><span class="blackfbicon large btn-floating btn-large waves-effect waves-light"></span></a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container center">
-      Developed by <a class="white-text text-lighten-3" href="https://www.facebook.com/shail.shah2">Shail Shah</a> and <a class="white-text text-lighten-3" href="https://www.facebook.com/tanmay.rajani">Tanmay Rajani</a>
+      Developed by <a class="white-text text-lighten-3 modal-trigger" href="#developers">Shail Shah</a> and <a class="white-text text-lighten-3 modal-trigger" href="#developers">Tanmay Rajani</a>
       </div>
     </div>
   </footer>

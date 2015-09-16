@@ -1,10 +1,8 @@
 <?php
 
-$con = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
-//$con = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
-$id=$_GET['idv'];
+include 'connection.php';$id=$_GET['idv'];
 $sql="DELETE FROM registration where s_id='$id'";
-$result2=mysqli_query($con,$sql);
+$result2=mysqli_query($connection,$sql);
 
 if($result2>0)
 {	

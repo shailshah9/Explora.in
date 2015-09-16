@@ -27,7 +27,7 @@
 	
 	.main-thing{
 		width: 500px;
-		height: 420px;
+		height: 620px;
 		margin: 50px auto 0px auto;
 		padding: 40px;
 		color: white;
@@ -38,7 +38,7 @@
 		-webkit-box-shadow: 25px 25px 25px #888888;
 		box-shadow: 25px 25px 25px #888888;
 		border-top-left-radius: 0px;
-		margin-top: 10%;
+		margin-top: 3%;
 	}
 	.image-logo{
 		width:400px;
@@ -73,6 +73,10 @@
 			width:95%
 		}
 	}
+	a{
+		color: white;
+		background-color:black;	 	
+	}
 	</style>
 </head>
 <body>
@@ -94,15 +98,18 @@
 	    	</div>
 	      	<div class="row">
 		        <div class="input-field col s12">
-		          <i class="material-icons prefix">account_box</i>
-		          <input id="icon_prefix" type="number" class="validate" autocomplete="off" name="otp" required>
+		          <i class="material-icons prefix">vpn_key</i>
+		          <input id="icon_prefix" type="text" maxlength="7" class="validate" autocomplete="off" name="otp" required>
 		          <label for="icon_prefix">OTP</label>
 		        </div>
 		    </div>
-		    <button class="btn waves-effect waves-light submeet right white teal-text" type="submit" name="action">Submit
+		    <button class="btn waves-effect waves-light submeet right white teal-text" type="submit" name="action">Proceed
 				<i class="material-icons">send</i>
 			</button>
 	    </form>
+	    <p><i class="material-icons prefix" stlye="float:left">done_all</i>Please enter the OTP that you got in email while registering through the Explora website</p><br/>
+	    <p><i class="material-icons prefix" stlye="float:left">done_all</i>Note that this OTP is valid only for single user registration, once you submit your data on next page, it can't be modified; to do so contact at <a href="mailto:info@explora.in">&nbsp;info@explora.in&nbsp;</a></p><br/>
+	    <center>&copy; 2015. All rights reserved. Explora Academy of Design.<p></p></center>
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

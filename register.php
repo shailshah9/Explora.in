@@ -26,19 +26,21 @@ if(isset($_POST["action"])) {
         $uploadOk = 0;
     }
 }
+
 if ($uploadOk == 0) {
     echo "Sorry, your file was not uploaded.";
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
-        //echo "The file ". basename( $_FILES["file"]["name"]). " has been uploaded. ";
-		$connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
-        //$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
+        include 'connection.php';
         $sql = "INSERT INTO `registration`(`course`, `first_name`, `middle_name`, `surname`, `address`, `mobile_no`,`img_path`, `dob`,`email`) VALUES ('$group','$fname','$surname','$lname','$address',$mob,'$target_file','$dob','$email')";
+        //echo $sql;
         $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
         if($result>0)
         {
-            $sql = "UPDATE new_reg SET flag=1 where otp=".$_SESSION['lotp'];
+            $var1=$_SESSION['lotp'];
+            $sql = "UPDATE new_reg SET flag=1 where otp='$var1'";
+            //echo $sql;
             $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
             unset($_SESSION['lotp']);
             echo '<script type="text/javascript"> alert("Registered Successfully")</script>';

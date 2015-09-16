@@ -1,9 +1,9 @@
 <?php
 session_start();
 $otp=$_POST['otp'];
-$connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
-//$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
-$sql = "select * from new_reg where otp=".$otp;
+include 'connection.php';
+$sql = "select * from new_reg where otp='$otp'";
+//echo $sql;
 $_SESSION['lotp']=$otp;
 	$result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
 	

@@ -1,8 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['unm'])) header('location:index.php');
-//$connection = mysqli_connect("localhost","root","","explora") or die("Error " . mysqli_error($connection));
-$connection = mysqli_connect("localhost","explora_new","random1234rewA","explora_new") or die("Error " . mysqli_error($connection));
+include 'connection.php';
 $rowcounter=0;
 $sql = "select * from registration where flag=0 order by first_name desc";
 $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
@@ -36,21 +35,6 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 	<link rel="icon" href="../media/logo.png">
 </head>
 <body>
-	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="#" class="white-text">1</a></li>
-		<li><a href="#" class="white-text">2</a></li>
-		<li><a href="#" class="white-text">3</a></li>
-		<li><a href="#" class="white-text">4</a></li>
-		<li><a href="#" class="white-text">5</a></li>
-	</ul>
-	<ul id='dropdown2' class='dropdown-content'>
-		<li><a href="#" class="white-text">1</a></li>
-		<li><a href="#" class="white-text">2</a></li>
-		<li><a href="#" class="white-text">3</a></li>
-		<li><a href="#" class="white-text">4</a></li>
-		<li><a href="#" class="white-text">5</a></li>
-	</ul>
-
 	<nav role="navigation">
 		<div class="nav-wrapper container">
 			<a id="logo-container" href="index.php" class="brand-logo">
@@ -59,20 +43,12 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
 			</a>
 			
 			<ul class="right hide-on-med-and-down">
-				
-            	<li><a href="#" class="white-text">1</a></li>
-				<li><a href="#" class="white-text">2</a></li>
-			    <li><a href="#" class="white-text">3</a></li>
-			    <li><a href="#" class="white-text">4</a></li>
-			    <li><a href="#" class="white-text">5</a></li>
+        <li><a href="welcome.php">Home</a></li>
+          <li><a href="logout.php">Logout</a></li>
 			</ul>
 			<ul id="nav-mobile" class="side-nav">
-				
-            	<li><a href="#" class="white-text">1</a></li>
-				<li><a href="#" class="white-text">2</a></li>
-			    <li><a href="#" class="white-text">3</a></li>
-			    <li><a href="#" class="white-text">4</a></li>
-			    <li><a href="#" class="white-text">5</a></li>
+        <li><a href="welcome.php">Home</a></li>
+          <li><a href="logout.php">Logout</a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>

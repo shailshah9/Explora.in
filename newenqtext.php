@@ -9,6 +9,12 @@
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/newreg.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="icon" href="media/logo.png">
+	<style>
+	a{
+		color: white;
+		background-color:black;	 	
+	}
+	</style>
 </head>
 <body>
 <div class="container shail">

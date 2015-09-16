@@ -71,10 +71,10 @@ if(!isset($_SESSION['otpl'])) header('location:otp.php');
 				<div class="file-field input-field col s12 l12 m12">
 					<div class="btn">
 				    	<span>Upload Photo</span>
-				       	<input type="file" name="file" id="photo" accept="image/*" required="">
+				       	<input type="file" name="file" id="photo"  accept="image/*" required="">
 				    </div>
 					<div class="file-path-wrapper">
-		              <input class="file-path validate" type="text">
+		              <input class="file-path validate" placeholder="Upload your passport size image only" type="text">
 		            </div>
 			    </div>
 			</div>

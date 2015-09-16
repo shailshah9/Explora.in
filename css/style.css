@@ -11,10 +11,21 @@ nav .brand-logo {
 .dropdown-content li > a, .dropdown-content li > span {
   color: grey
 }
+.card .card-action a {
+  color:#b2ff59;
+  }
+
+.sha{
+  background-color: grey;
+  opacity: 0.90;
+}
 
 body{
   background: url(../media/bg.png);
   background-repeat: repeat;
+}
+footer.page-footer .footer-copyright{
+  background-color: #616161;
 }
 
 .container{
@@ -23,6 +34,62 @@ body{
 
 .fbicon{
   background: url(../media/fb.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin: 20px 10px 10px 10px;
+  opacity: .7;
+}
+
+.td{
+  width: 200px;
+  height: 200px;
+}
+
+.blackfbicon{
+  background: url(../media/blackfb.jpg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin: 20px 10px 10px 10px;
+  opacity: .7;
+}
+.linicon{
+  background: url(../media/lin.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin: 20px 10px 10px 10px;
+  opacity: .7;
+}
+.ticon{
+  background: url(../media/ticon.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin: 20px 10px 10px 10px;
+  opacity: .7;
+}
+.gicon{
+  background: url(../media/gicon.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin: 20px 10px 10px 10px;
+  opacity: .7;
+}
+.fdicon{
+  background: url(../media/fd.png) no-repeat;
   background-position: center;
   background-size: contain;
   float: left;
@@ -41,13 +108,13 @@ body{
 }
 
 .bg1{
-	background : url(../media/ResultImages/images/1.jpg);
+	background : url(../media/ResultImages/images/1.JPG);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .bg2{
-	background : url(../media/ResultImages/images/2.jpg);
+	background : url(../media/ResultImages/images/2.JPG);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -115,7 +182,7 @@ body{
 	background-repeat: no-repeat;
 }
 .bg15{
-	background : url(../media/ResultImages/images/15.jpg);
+	background : url(../media/ResultImages/images/15.JPG);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -268,6 +335,7 @@ footer.page-footer {
   margin: 0;
 }
 
+
 .logo1{
   width: 100px;
   height: 90px;
@@ -345,6 +413,13 @@ nav{
   }
   .left{
     position: relative;
+  }
+  .sha{
+    position: relative;
+    max-height: 15px;
+    background-color: transparent !important;
+    color:black !important;
+    margin-top: 120%;
   }
   .add{
     z-index: 1234
