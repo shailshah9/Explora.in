@@ -551,17 +551,19 @@
 			  </span>
             </div>
           </div><!-- /card -->
+          
           <div class="card effect__random" data-id="14">
             <div class="card__front bg14">
+             
             </div>
             <div class="card__back">
               <span class="card__text">
 				<h5>CEPT</h5>
-				<h3>142</h3>
-				<h6>Hetanshi Patva</h6>
+				<h3>143</h3>
+				<h6>Khevna Modi</h6>
 			  </span>
             </div>
-          </div><!-- /card -->
+          </div>
           <div class="card effect__random" data-id="15">
             <div class="card__front bg15">
             </div>
@@ -569,7 +571,7 @@
               <span class="card__text">
 				<h5>CEPT</h5>
 				<h3>142</h3>
-				<h6>Shivani Shah</h6>
+				<h6>Hetanshi Patva</h6>
 			  </span>
             </div>
           </div><!-- /card -->
@@ -580,12 +582,23 @@
               <span class="card__text">
 				<h5>CEPT</h5>
 				<h3>142</h3>
+				<h6>Shivani Shah</h6>
+			  </span>
+            </div>
+          </div><!-- /card -->
+          <div class="card effect__random" data-id="17">
+            <div class="card__front bg17">
+            </div>
+            <div class="card__back">
+              <span class="card__text">
+				<h5>CEPT</h5>
+				<h3>142</h3>
 				<h6>Manali Shah</h6>
 			  </span>
             </div>
           </div>
-          <div class="card effect__random" data-id="17">
-			<div class="card__front bg17">
+          <div class="card effect__random" data-id="18">
+			<div class="card__front bg18">
 			 
 			</div>
 			<div class="card__back">
@@ -595,18 +608,6 @@
 				<h6>Dharini Tamakuwala</h6>
 			  </span>
 			</div>
-          </div>
-          <div class="card effect__random" data-id="18">
-            <div class="card__front bg18">
-             
-            </div>
-            <div class="card__back">
-              <span class="card__text">
-				<h5>CEPT</h5>
-				<h3>141</h3>
-				<h6>Parshish Tadvi</h6>
-			  </span>
-            </div>
           </div>
         </div><!-- /card -->
 		<a class="waves-effect waves-light btn black right res" href="results.php">More Results.. &nbsp;&nbsp;</a>

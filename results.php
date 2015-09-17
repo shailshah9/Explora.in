@@ -1,8 +1,3 @@
-<?php
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -268,7 +263,7 @@
 			<div class="card-content">
 			
 				<div class="row center">
-					<h5>Explora’s achievements are not only marked at state level but also at National level (Online Exams)</h5>
+					<h6>*all students featured here are/were exclusively associated with Explora.</h6>
 					
 				</div>
 				
