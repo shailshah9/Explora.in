@@ -107,7 +107,7 @@
   </div>
 <div class="container">
   	<div class="row">
-  	<p class="center sha white-text"><marquee>2016 Registrations open. Check out the New Registration button below.</marquee></p>
+  	<p class="center sha white-text">2016 Registrations open. Check out the New Registration button below.</p>
   	</div>
   </div>
   <div class="container">
