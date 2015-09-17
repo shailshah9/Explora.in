@@ -30,6 +30,9 @@
 	.result-card .card-image img{
 		height: inherit;
 	}
+	.sh{
+	box-shadow: 0 0 0 0 rgba(0,0,0,0),0 0 0 0 rgba(0,0,0,0) !important;
+	}
 	</style>
 </head>
 <body>
@@ -256,9 +259,22 @@
 <!-- national exams over here-->
 
 <!-- main results-->
-<div class="container">
+<div class="container center">
 	<div class="row">
-        <div class="col s12 m12 l12">
+        <div class="col s3 m3 l3">
+        	<div class="card trans sh" >
+			<div class="card-content">
+			
+				<div class="row center">
+					<h6></h6>
+					
+				</div>
+				
+			</div>
+			</div>
+        </div>
+        <div class="col s6 m6 l6">
+        	
           <div class="card trans" >
 			<div class="card-content">
 			
@@ -270,6 +286,18 @@
 			</div>
 			</div>
 			</div>
+			<div class="col s3 m3 l3">
+				<div class="card trans sh" >
+			<div class="card-content">
+			
+				<div class="row center">
+					<h6></h6>
+					
+				</div>
+				
+			</div>
+			</div>
+        	</div>
 			</div>
             
 		 

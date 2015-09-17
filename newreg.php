@@ -31,18 +31,18 @@ if(!isset($_SESSION['otpl'])) header('location:otp.php');
             </div>
 			<div class="row">
 		        <div class="input-field col s12 l4 m4">
-		          <input id="surname" type="text" class="validate" autocomplete="off" name="surname" required>
+		          <input id="surname" type="text" class="validate" autocomplete="off" onKeyUp="capitalise()" name="surname" required>
 		          <label for="surname">Surname</label>
 		        </div>
 				<div class="input-field col s12 l4 m4">
 		          <i class="material-icons prefix"></i>
-		          <input id="fname" type="text" class="validate" autocomplete="off" name="fname" required>
+		          <input id="fname" type="text" class="validate" autocomplete="off" onKeyUp="capitalise()" name="fname" required>
 		          <label for="fname">First Name</label>
 		        </div>
 				<div class="input-field col s12 l4 m4">
 		          <i class="material-icons prefix"></i>
-		          <input id="lname" type="text" class="validate" autocomplete="off" name="lname" required>
-		          <label for="lname">Last Name</label>
+		          <input id="lname" type="text" class="validate" autocomplete="off" onKeyUp="capitalise()" name="lname" required>
+		          <label for="lname">Middle Name</label>
 		        </div>
 		    </div>
 		    <div class="row">
@@ -88,5 +88,16 @@ if(!isset($_SESSION['otpl'])) header('location:otp.php');
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 <script src="js/init.js"></script>
+<script>
+	function capitalise() {
+  var inp=document.getElementById('lname').value;
+  document.getElementById('lname').value=inp.charAt(0).toUpperCase() + inp.slice(1).toLowerCase();
+  var inp1=document.getElementById('surname').value;
+  document.getElementById('surname').value=inp1.charAt(0).toUpperCase() + inp1.slice(1).toLowerCase();
+  var inp2=document.getElementById('fname').value;
+  document.getElementById('fname').value=inp2.charAt(0).toUpperCase() + inp2.slice(1).toLowerCase();
+ 
+}
+</script>
 </body>
 </html>
