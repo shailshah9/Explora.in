@@ -70,10 +70,9 @@ $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_
           <div class="card result-card">
             <div class="card-image">
               <img src="<?php echo "../".$row['img_path'];?>">
-              <span class="card-title"><?php echo $row['first_name']." ".$row['surname'];?></span>
+              <span class="card-title"><?php echo $row['first_name']." ".$row['middle_name'];?></span>
             </div>
             <div class="card-content">
-              <p><b>Fees:</b><?php echo $row['f_reg'];?></p>
               <p><b>Mob:</b><?php echo $row['mobile_no'];?></p><br/>
               <center>
                 <p><a onclick="return confirm('Are you sure , you want to delete?')" 
